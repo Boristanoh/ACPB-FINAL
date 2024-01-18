@@ -1,0 +1,187 @@
+*{
+    font-family: 'geologica';
+    margin: 0px;
+}
+
+header{
+  width: 100%;
+}
+main{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.start{
+    display: flex;
+    color: white;
+    background: linear-gradient(to right, rgba(52, 152, 219, 0.7), rgba(44, 62, 80, 0.7)),
+    url("/img/home.webp");
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    margin: 0 auto;
+    font-size: xx-large;
+    
+    flex-direction: column;
+    text-align: center;
+    @media screen  and (max-width: 796px){
+        font-size: medium;
+        height: 300px
+    }
+}
+.start p,h1{
+    width: 1000px;
+    @media screen  and (max-width: 796px){
+        font-size: medium;
+        width: 350px;
+        ;
+    }
+}
+
+.word{
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    @media screen  and (max-width: 796px){
+        flex-direction: column;
+        width: 100%;
+
+        
+    }
+}
+.photo{
+    display: flex;
+    background-image: url('/img/presi.avif');
+    width: 50%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    @media screen  and (max-width: 796px){
+        width: 100%;
+        
+    }
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 800px;
+    padding: 50px;
+    font-size: x-large;
+    @media screen  and (max-width: 796px){
+        font-size: small;
+    }
+}
+
+.text h1{
+    align-items: center;
+}
+
+/* Sidenav menu */
+.sidenav {
+    display: inline;
+    @media screen  and (max-width: 796px){
+        display: inline;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -100%;
+        background-color: white;
+        padding-top: 60px;
+        transition: left 0.5s ease; 
+       
+         
+    }
+
+
+  }
+
+  /* Sidenav menu links */
+  .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+
+  }
+  img{
+    width: 50px;
+    height: 50px;
+  }
+  .sidenav a:hover {
+    color: rgb(10, 172, 53);;
+  }
+  
+  .sidenav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    top: 0px;
+    margin: 0;
+    @media screen  and  (max-width: 796px){
+        flex-direction: column;
+        align-items: normal;
+    }
+
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    display: none;
+    @media screen  and (max-width: 700px){
+        position: absolute;
+        top: 0;
+        display: block;
+        right: 20px;
+        font-size: 36px;
+    }
+   
+  }
+  .navbar{
+    align-items: center;
+    display: flex; 
+    width: 100%;   
+    justify-content: space-between;
+  }
+  .navbar img{
+    @media screen  and (min-width: 796px){
+        display: none;
+         
+         
+    }
+  }
+
+  /* Icône burger */
+  .burger-icon span {
+    display: flex;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+#openBtn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    @media screen  and (min-width: 796px){
+        display: none;
+         
+         
+     }
+}
+
