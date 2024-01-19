@@ -120,7 +120,7 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    border: solid 1px;
+    border: solid 0.1px;
     margin: 10px;
     
     width: 300px;
