@@ -1,15 +1,16 @@
 *{
     font-family: 'geologica';
-    margin: 0px;
-}
-
-header{
-  width: 100%;
-}
-main{
     margin: 0;
     padding: 0;
-    width: 100%;
+}
+i{
+   padding: 5px;
+}
+header{
+  padding: 10px;
+}
+main{
+
 }
 .start{
     display: flex;
@@ -22,22 +23,24 @@ main{
     align-items: center;
     justify-content: center;
     height: 700px;
+    width: 100%;
     margin: 0 auto;
     font-size: xx-large;
-    
     flex-direction: column;
     text-align: center;
     @media screen  and (max-width: 796px){
-        font-size: medium;
-        height: 700px
+        width: 100%;
+        font-size: small;
+        height: 600px;
+        
     }
 }
 .start p,h1{
     width: 1000px;
     @media screen  and (max-width: 796px){
         font-size: medium;
-        width: 350px;
-        ;
+        width: 250px;
+        
     }
 }
 
@@ -45,7 +48,7 @@ main{
     display: flex;
     flex-direction: row;
     height: 800px;
-    
+    width: 100%;
     @media screen  and (max-width: 796px){
         display: flex;
         flex-direction: column;
@@ -58,7 +61,7 @@ main{
     display: flex;
     background-image: url('/img/presi.avif');
     width: 40%;
-    height: 600px;
+    height: 800px;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -73,12 +76,13 @@ main{
     display: flex;
     flex-direction: column;
     width: 60%;
-    height: 800px;
+    height: 600px;
     padding: 50px;
     font-size: x-large;
+    justify-content: space-around;
     @media screen  and (max-width: 796px){
         font-size: small;
-        height: 80px;
+        ;
     }
 }
 
@@ -86,8 +90,84 @@ main{
     align-items: center;
 }
 
-button{
+
+.schoolbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.A2gp-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     
+    border-radius: 50;
+    
+}
+.pbx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    
+    margin: 20px;
+    
+}
+.school{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    border: solid 1px;
+    margin: 10px;
+    
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+    background-color: white;
+}
+
+
+.school p{
+    margin: 10px;
+}
+
+.school a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(10, 172, 53);
+    color: white;
+    @media screen  and (max-width: 796px){
+        width: 200px;
+        height: 30px;
+        background-color: rgb(10, 172, 53);
+        color: white;
+    }
 }
 /* Sidenav menu */
 .sidenav {
@@ -125,7 +205,7 @@ button{
     height: 50px;
   }
   .sidenav a:hover {
-    color: rgb(10, 172, 53);;
+    color: rgb(10, 172, 53);
   }
   
   .sidenav ul {
@@ -138,6 +218,7 @@ button{
     @media screen  and  (max-width: 796px){
         flex-direction: column;
         align-items: normal;
+        
     }
 
   }
