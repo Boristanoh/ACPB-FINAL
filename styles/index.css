@@ -16,7 +16,7 @@ main{
     display: flex;
     color: white;
     background: linear-gradient(to right, rgba(52, 152, 219, 0.7), rgba(44, 62, 80, 0.7)),
-    url("/img/home.webp");
+    url("../img/home.webp");
     opacity: 0.8;
     background-size: cover;
     background-position: center;
@@ -59,7 +59,7 @@ main{
 }
 .photo{
     display: flex;
-    background-image: url('/img/presi.avif');
+    background-image: url('../img/presi.avif');
     width: 40%;
     height: 800px;
     background-size: cover;
