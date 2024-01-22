@@ -297,6 +297,10 @@ i{
     transition: transform 500ms ease-in-out;
     
 }
+.school img{
+    width: 100px;
+    height: 100px;
+}
 
 .school:hover{
         transform: scale(1.1);
@@ -373,6 +377,8 @@ i{
     }
     .start{
         background-attachment: scroll;
+        gap: 5rem;
+        height: 100vh;
       }
    
     .about__what{ 
@@ -402,6 +408,10 @@ i{
     .start__p2{
 
         font-size: 2rem;
+    }
+    .school img{
+        width: 80px;
+        height: 80px;
     }
 }
 
