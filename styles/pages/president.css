@@ -1,0 +1,17 @@
+section div{
+    box-shadow: 0rem 0rem 0.5rem black;
+    padding: 2rem 1rem;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 15px;
+    background-color: var(--white);
+}
+
+section{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}

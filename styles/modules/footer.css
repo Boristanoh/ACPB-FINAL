@@ -1,0 +1,121 @@
+footer {
+    
+    padding: 5rem 0rem 2rem 0rem;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #00da49, #18d697);
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 380px) {
+        margin-left: 1rem;
+    }
+}
+
+.logo-acpb{
+    width: 6rem;
+    height: 5rem;
+}
+.footer__adresse,.footer__media{
+    display: flex;
+    flex-direction: row;
+    gap:0.7rem;
+    margin-bottom: 1rem;
+}
+.footer__adresse{
+    align-items: center;
+}
+
+.footer__media{
+    justify-content: space-between;
+    
+}
+
+.icon{
+    color: black;
+    font-size: 2rem;
+}
+
+.footer__adresse--texte{
+    line-height: 2rem;
+}
+
+.footer__bloc2 nav ul{
+    display: flex; /* active flexbox pour le conteneur */
+    flex-direction: column;
+    
+    gap: 0.4rem;
+}
+
+.footer__bloc3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+}
+
+.footer__bloc2 nav ul li{
+    display: flex;
+    display: inline;
+    justify-content: space-between;
+    
+}
+
+
+footer nav ul li a:hover{
+    color: black;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.droit{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 610px) {
+    .logo-acpb{
+        width: 4rem;
+        height: 3rem;
+    }
+
+    .icon{
+        color: black;
+        font-size: 1.5rem;
+    }
+    footer nav ul li{
+        font-size: 0.9rem;
+    }
+
+    img{
+        width: 30px;
+        height:30px;
+    }
+    .footer__media{
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        
+    }
+    
+  .footer__bloc3{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+}
+
+

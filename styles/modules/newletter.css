@@ -1,0 +1,103 @@
+.newsletter {
+    
+    padding: 0.8rem;
+    width: max-content;
+    background:linear-gradient(to bottom left,rgb(0, 141, 54), #00da49);
+    
+    border-radius: 20px;
+    text-align: center;
+    font-family: Geologica ,sans-serif;
+    font-style: bold;
+    margin: auto;
+}
+
+.newsletter {
+    position: relative;
+    top: 4rem;
+    
+}
+
+.xcontainer {
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: auto;
+}
+    
+.search-form {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    }
+
+    
+    .search-form p {
+    padding-right: 10px;
+    }
+    
+    
+    .search-form input[type="email"] {
+    flex: 1;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 10px;
+    font-family: "Geologica" ,sans-serif;
+    font-style: bold;
+    border: solid;
+    
+    }
+    
+    
+    .circle-button {
+    width: 40px;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #00da49, #18d697);
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    }
+
+
+.newsletter__texte{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter {
+     
+        width: 80%;
+        
+    }
+    .newsletter__texte{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .newsletter {
+     
+        width: 70%;
+        
+    }
+    .newsletter__texte{
+        font-size: 0.8rem;
+    }
+    .circle-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .search-form input[type="email"] {
+        width: 2rem;
+        
+        }
+
+}
+
+
+
+    

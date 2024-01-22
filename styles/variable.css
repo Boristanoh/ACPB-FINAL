@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&family=Lato:ital@1&family=Montserrat&family=Noto+Sans&family=Open+Sans:ital@1&family=Roboto:wght@300&family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Pacifico&family=Yesteryear&display=swap');
+/* Design System */
+:root {
+    /* Colors */
+    --green-highlight: aquamarine;
+    --light-blue: cadetblue;
+    --light-grey: #F3F3F3;
+    --black: #000000;
+    --white: #FFFFFF;
+    
+    
+    /* Text configuration */
+    --body-font: 'Montserrat';
+    --body-highlight-font: 'Montserrat';
+    --header-font: 'Bebas Neue';
+    --title-font: 'Bebas Neue';
+    --welcome-font:'Rubik Burned', system-ui;
+    --important-font: 'Finger Paint', sans-serif;
+    --style-font:'Yesteryear', cursive;
+    
+    
+    --body-font-weight: 400;
+    --body-highlight-font-weight: 600;
+    --header-font-weight: 400;
+    --title-font-weight: 400;
+    
+    
+    --body-font-size: 1.15rem;
+    --body-highlight-font-size: 1.25rem;
+    --header-font-size:6rem;
+    --title-font-size: 2.5rem;
+    --title2-font-size: 2rem;
+    
+    
+    --body-line-height: 1.7rem;
+    --body-highlight-line-height: 1.5rem;
+    --header-line-height: 5.375rem;
+    --title-line-height: 1.75rem;
+}
+
+@media (max-width: 1024px) {
+    :root {
+      /* Mobile Variables */
+      --body-font-size: 1rem;
+      --body-highlight-font-size: 1rem;
+      --header-font-size: 5rem;
+      --title-font-size: 2.5rem;
+      --title2-font-size: 1.5rem;
+    
+      --body-line-height: 1.25rem;
+      --body-highlight-line-height: 1.25rem;
+      --header-line-height: 3rem;
+      --title-line-height: 1.5rem;
+    }
+  }
+
+  @media (max-width: 630px) {
+    :root {
+      /* Mobile Variables */
+      --title2-font-size: 1rem;
+
+    }
+  }
+
+  @media (max-width: 420px) {
+    :root {
+      /* Mobile Variables */
+      --body-font-size: 0.9rem;
+      --body-highlight-font-size: 1rem;
+      --header-font-size: 4rem;
+      --title-font-size: 2rem;
+    
+      --body-line-height: 1.25rem;
+      --body-highlight-line-height: 1.25rem;
+      --header-line-height: 3rem;
+      --title-line-height: 1.5rem;
+    }
+  }
+
+
+
+body {
+    background-color: var(--light-grey);
+    font-family: var(--body-font);
+    font-style: normal;
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: var(--black);
+}
+h3{
+    font-size: var(--title2-font-size);
+}
+/* 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Grape Nuts', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+ /* font-family: 'Chicle', serif;
+font-family: 'Finger Paint', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Shadows Into Light', cursive; */
+
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: var(--black);
+    
+  }
+
+  a{
+    font-family: 'Roboto', sans-serif;
+  }
+
+h1 {
+    font-family: var(--header-font);
+    font-style: normal;
+    font-weight: var(--header-font-weight);
+    font-size: var(--header-font-size);
+    line-height: var(--header-line-height);
+    color: var(--light-grey);
+    padding: 3rem 0rem;
+    margin: 5rem 0rem 4rem 0rem;
+    text-align: center;
+    background:linear-gradient(to bottom left,var(--light-blue), var(--green-highlight));
+    /* background:linear-gradient(to bottom left,rgb(0, 141, 54), #00da49); */
+    
+} 
+
+h2 {
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    color: var(--black);
+    margin: 2rem 0rem 2rem 0rem;
+    /* text-decoration: underline var(--green-highlight); */
+    position: relative;
+    /* border-left: 1rem var(--green-highlight) solid ; */
+    padding-left: 0.25rem;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.188rem;
+} 
+
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    top: 0;
+    bottom: 0;
+    height:3rem ;
+    
+    border-left: 0.4rem var(--light-blue) solid;
+    transform: translateY(-1rem);
+  }
+
+ 

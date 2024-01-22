@@ -1,0 +1,12 @@
+.image-work{
+    width: 40%;
+    height: 40%;
+    margin-top: 2rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

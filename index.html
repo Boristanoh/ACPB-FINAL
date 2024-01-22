@@ -4,22 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenu(e) sur le site officiel de l'ACPB</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pages/accueil.css">
+
     <script src="https://kit.fontawesome.com/bc6d31ae1f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="app.js"></script>
     <script src="newsletter.js"></script>
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/index.css">
+    
 </head>
 <body>
     <header>
+        
+            <div id="mySidenav" class="sidenav">
+                <div class="navbar__logo">
+                    <a href="index.html"><img class ="navbar__logo--image1" src="assets/logos/logo-acpb.jpg" alt="logo-acpb"></a>
+                    <a href="index.html"><img class ="navbar__logo--image2" src="assets/logos/BCPST.png" alt="logo-BCPST"></a>
+                </div>
+                
+                <ul>
+                    <li> <a href="index.html" class="navbarlink--actu"> <i class="fa-solid fa-home"></i>Accueil</a> </li>
+                    <li><a href="news.html"><i class="fa-solid fa-newspaper"></i>News</a></li>
+                    <li><a href="concours.html"><i class="fa-solid fa-school"></i>Concours</a></li>
+                    <!-- <li><i class="fa-solid fa-book"></i><a href="biblio.html">Bibliotheque</a></li> -->
+                    <li><a href="activites.html"><i class="fa-solid fa-heart"></i>Activités</a></li>
+                    <li><a href="album.html"><i class="fa-solid fa-image"></i>Albums</a></li>
+                    <!-- <li><i class="fa-solid fa-user-doctor"></i><a href="carriere.html">Anciens Présidents</a></li> -->
+                    <li><a href="contact.html"><i class="fa-solid fa-address-card"></i>Contacts</a></li>
+                    <!-- <li><i class="fa-solid fa-bag-shopping"></i><a href="shop.html">Boutique</a></li> -->
+                </ul>
+            </div>
+
+
+
+
         <div class="navbar">
-            <img src="img/logo.jpg" alt="logo">
+
+            <div class="navbar__logo">
+                <a href="index.html"><img class ="navbar__logo--image1" src="assets/logos/logo-acpb.jpg" alt="logo-acpb"></a>
+                <a href="index.html"><img class ="navbar__logo--image2" src="assets/logos/BCPST.png" alt="logo-BCPST"></a>
+            </div>
+            
+            
+            <nav class="navbarlink">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li> <a href="index.html" class="navbarlink--actu"> <i class="fa-solid fa-home"></i>Accueil</a> </li>
+                    <li><a href="news.html"><i class="fa-solid fa-newspaper"></i>News</a></li>
+                    <li><a href="concours.html"><i class="fa-solid fa-school"></i>Concours</a></li>
+                    <!-- <li><i class="fa-solid fa-book"></i><a href="biblio.html">Bibliotheque</a></li> -->
+                    <li><a href="activites.html"><i class="fa-solid fa-heart"></i>Activités</a></li>
+                    <li><a href="album.html"><i class="fa-solid fa-image"></i>Albums</a></li>
+                    <!-- <li><i class="fa-solid fa-user-doctor"></i><a href="carriere.html">Anciens Présidents</a></li> -->
+                    <li><a href="contact.html"><i class="fa-solid fa-address-card"></i>Contacts</a></li>
+                    <!-- <li><i class="fa-solid fa-bag-shopping"></i><a href="shop.html">Boutique</a></li> -->
+                </ul>
+                
+            </nav>
+
+            
+            <div >
                 <a href="#" id="openBtn">
                     <span class="burger-icon">
                     <span></span>
@@ -27,80 +75,247 @@
                     <span></span>
                     </span>
                 </a>
-        </div>
-            <div id="mySidenav" class="sidenav">
-                <a id="closeBtn" href="#" class="close">×</a>
-                <ul>
-                  <li><a href="#"><img src="img/logo.jpg" alt=""></a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Carrieres</a></li>
-                  <li><a href="#">Activites</a></li>
-                  <li><a href="#">Anciens Presidents</a></li>
-                  <li><a href="#">Album</a></li>
-                  <li><a href="#">Contacts</a></li>
-                </ul>
             </div>
+
+            
+            
+        </div>
     </header>
     <script src="scripts/app.js"></script>
     <main> 
-        <div class="start">
-                <h1>We are BCPST !</h1>
-                <p>Rejoignez-nous pour explorer le travail, la passion et le fun, le tout réuni dans une plateforme conçue pour vous inspirer. </p>
-        </div>
-        <div class="word">
-            <div class="photo"></div>
-            <div class="text">
-                <h1>Le mot du President</h1>
-                <p>oloribus sint consequuntur illum repellendus rerum cum, sit molestiae reprehenderit iure corporis velit? maxime quaerat iste nobis accusantium autem eaque ut. Natus, cum nihil! magni laboriosam quia adipisci minima est ipsa assumenda nemo. Deleniti hic laborum ratione!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis qui, officia a blanditiis molestias nulla expedita, cum iure fugiat laboriosam aut ratione animi? Corrupti quis culpa consectetur esse ipsa repellat!</p>
-                <button>voir plus</button>
+        <section class="start">
+            <div class="start__p1">Association  des Classes Préparatoires Biologiques </div>
+            <div class="start__acpb">ACPB</div>
+            <div class="start__p2">La BCP-ST plus qu'une famille. </div>
+        </section>
+
+
+       
+
+        <section class="section2">
+            <div class="about__what">Qu'est ce que <span class="about__what--important">l'ACPB </span>  ?🤔🤔</div>
+            <div class="about">
+                <div class="about__info" >
+                    
+                        <p> 
+                        <span class="about__info--important">L'ACPB </span>(<b><span class="about__info--important">Association des Classes Préparatoires Biologiques</span> </b>), <em>créée le 02 septembre 1964</em> ,est une association regroupant les étudiants de la filière <b>Biologie Chimie Physique et Science de la Terre(BCP-ST)</b> 
+                        de l'<b>Ecole Prépatoire aux Grandes Ecoles ( EPGE )</b> de l'<b>Institut National Polytechnique Houphouët Boigny ( INP-HB )</b>. 
+                        <br>Elle a pour but principal de rassembler les étudiants de la BCP-ST au sein d'une même famille et de perpétuer un réseau relationnel.
+                        
+                        </p>
+
+                        <p class="about__texte">
+                            Pour d'autres la prépa BCPST est une filière de l'école préparatoire composée d'élèves ayant une affinité
+                            pour la Biologie, la Chimie, la Physique et les Sciences de la Terre mais
+                            pour nous <span >la BCPST c'est plus qu'une famille :)</span>
+                        </p>
+
+                    
+
+                </div>
+                <img src="assets/image/accueil/image-bcpst.png" class="about__image" alt="image-bcpst">
             </div>
-        </div>
-        <div class="schoolbox">
-            <div class="pbx"><h1>Ecoles et Concours</h1></div>
-            <div class="pbx"><h1>A2GP</h1></div>
-            <div class="A2gp-box">
+            <p class="about__welcome">Bienvenue sur la page de cette magnifique association.</p>
+        </section>
+
+        <section class="section3">
+            <h2 class="section3__titre">Mot du President</h2>
+            <p class="section3__texte">
+                     En tant que président de cette association dynamique, je suis ravi de partager avec vous la passion qui nous anime tous dans notre parcours académique axé sur la biologie,
+                    la chimie, la physique et les sciences de la terre. <br> <br>
+                    
+                    L'ACPB a pour mission de rassembler les élèves de la prépa BCP-ST et de créer un environnement propice à l'échange, à la collaboration et à l'épanouissement académique. Notre association vise à soutenir chacun de ses membres dans leur quête de connaissances et 
+                    à favoriser une ambiance enrichissante au sein de notre communauté.
+                    Que vous soyez en quête de ressources académiques, d'opportunités de carrière ou simplement d'un réseau d'amis partageant les mêmes passions, vous trouverez au sein de l'ACPB 
+                    un foyer où l'excellence académique se conjugue avec une ambiance conviviale. <br> <br>
+                    
+                    Nous sommes fiers de la diversité de talents et d'intérêts que chaque membre apporte à notre communauté. En naviguant sur notre site, j'espère que vous découvrirez les nombreuses activités, événements 
+                    et opportunités que nous offrons à nos membres.
+                    N'hésitez pas à explorer les différentes sections du site pour en savoir plus sur nos activités récentes, les réalisations de nos membres, 
+                    et comment vous pouvez vous impliquer davantage dans la vie de l'ACPB. <br>
+                     
+                    Au nom de toute l'équipe dirigeante de l'ACPB, je vous souhaite une expérience enrichissante sur notre site. N'hésitez pas à nous contacter si vous avez des questions, des suggestions ou si vous souhaitez vous impliquer activement dans notre association.
+       
+               
+            </p>
+        </section>
+
+
+
+
+
+           
+        <section class="section4">
+            <!-- <i class="fa-solid fa-graduation-cap"></i> -->
+                <h2> Ecoles d'ingénieur</h2>
                 
-                <div class="school">
-                    <img src="img/logos/esa.png" alt="esa">
-                    <p>L’École Supérieure d’Agronomie (ESA) est un établissement d’enseignement Supérieur et de Recherche, sous tutelle
-                        du Ministère de l’Enseignement Supérieur et de la Recherche Scientifique de l’État de Côte d’Ivoire.</p>
-                    <p><i class="fa-solid fa-link"></i><a href="http://esa.inphb.ci">Visitez le site officiel</a></p>
+                <div class="schoolbox">
+                    
+                    <div class="school school-esa">
+                        <img src="assets/logos/esa.png" alt="logo-esa">
+                        <p> <b>L'École Supérieure d'Agronomie</b> (ESA) est un établissement d'enseignement Supérieur et de Recherche, sous tutelle
+                            du Ministère de l'Enseignement Supérieur et de la Recherche Scientifique de l'État de Côte d'Ivoire.</p>
+                        <a href="http://esa.inphb.ci" target="_blank"> <i class="fa-solid fa-link"></i>Visitez le site officiel</a>
+                    </div>
+                    <div class="school school-esmg">
+                        <img src="assets/logos/esmg.png" alt="logo-esmg">
+                        <p> <b>L'Ecole Supérieure de Mines et de Géologie</b> (ESMG) est le résultat de la synergie d'action des professionnels des 
+                            domaines des mines de la géologie. l'ESMG est un centre d'excellence régional de la Banque Mondiale pour les Mines et l'environnement minier.</p>
+                        <a href="https://inphb.ci/ecoles/esmg" target="_blank"><i class="fa-solid fa-link"></i>Visitez le site officiel</a>
+                    </div>
+                    <div class="school school-esi">
+                        <img src="assets/logos/esi.png" alt="logo-esi">
+                        <p><b>L'Ecole Supérieure d'Industrie</b> (ESI) est née en 1996 lors de la 
+                            fusion des écoles de formation technique de l'ex-Institut National Supérieur de l'Enseignement Technique</p>
+                        <a href="https://inphb.ci/ecoles/esi" target="_blank"><i class="fa-solid fa-link"></i>Visitez le site officiel</a>
+                    </div>
+                    <div class="school school-espe">
+                        <img src="assets/logos/ESPE.png" alt="logo-espe">
+                        <p><b>L’École Supérieure du Petrle et de l'Energie</b> (ESPE) est un établissement d’enseignement Supérieur et de Recherche  
+                            l'Ecole Supérieure du Pétrole et de l'Énergie (ESPE) est née officielement en 2020.
+                        </p>
+                        <a href="https://inphb.ci/ecoles/espe" target="_blank"><i class="fa-solid fa-link"></i>Visitez le site officiel</a>
+                    </div>
+                   
+                    <div class="school school-escae">
+                        <img src="assets/logos/escae.png" alt="logo-escae">
+                        <p> <b>L’Ecole Supérieure de Commerce et d'Administration des Entreprises</b>(ESCAE), en sa qualité de business school, favorise la production intellectuelle en vue de l'enrichissement des idées.
+                           Elle ambitionne de préparer des leaders porteurs de valeurs de compétitivité, de modernisation 
+                            et de créativité.</p>
+                        <a href="http://www.escae.inphb.ci/vues/escae/" target="_blank"><i class="fa-solid fa-link"></i>Visitez le site officiel</a>
+                    </div>
                 </div>
-                <div class="school">
-                    <img src="img/logos/esmg.png" alt="esmg">
-                    <p>L'Ecole Supérieure de Mines et de Géologie (ESMG) est le résultat de la synergie d'action des professionnels des 
-                        domaines des mines de la géologie. l'ESMG est un centre d'excellence régional de la Banque Mondiale pour les Mines et l'environnement minier.</p>
-                    <p><i class="fa-solid fa-link"></i><a href="https://inphb.ci/ecoles/esmg">Visitez le site officiel</a></p>
+        </section>
+
+
+
+
+
+        <section class="section5">
+        
+            
+            
+            <h2 >Activités Récentes</h2>
+            
+            <div class="pbox">
+                <div  onclick="self.location.href='activite/journee.html'">
+                    <h3>La journée carrière</h3>
+                    <img src="assets/image/activites/journee-carriere.jpg" alt="journée carrière">
+                    <p>
+                        La journée carrière est un événement 
+                        spécialement conçu pour nous
+                         aider à mieux comprendre les différentes 
+                        opportunités professionnelles qui s'offrent à nous.</p>
                 </div>
-                <div class="school">
-                    <img src="img/logos/esi.png" alt="esi">
-                    <p>L'Ecole Supérieure d'Industrie (ESI) est née en 1996 lors de la 
-                        fusion des écoles de formation technique de l'ex-Institut National</p>
-                    <p><i class="fa-solid fa-link"></i><a href="https://inphb.ci/ecoles/esi">Visitez le site officiel</a></p>
+                <div  onclick="self.location.href='activite/english.html'">
+                    <h3>L'English Day </h3>
+                    <img src="assets/image/activites/english-day.jpg"alt="English day">
+                    <p>
+                        L'English Day est une journée spéciale dédiée à la 
+                        célébration de la langue
+                         anglaise et de la culture anglophone.
+                        </p>
                 </div>
-                <div class="school">
-                    <img src="img/logos/ESPE.png" alt="espe">
-                    <p>L’École Supérieure du Petrle et de l'Energie (ESPE) est un établissement d’enseignement Supérieur et de Recherche  
-                        l'Ecole Supérieure du Pétrole et de l'Énergie (ESPE) est née officielement en 2020.
-                        .</p>
-                    <p><i class="fa-solid fa-link"></i><a href="https://inphb.ci/ecoles/espe">Visitez le site officiel</a></p>
+                <div  onclick="self.location.href='activite/sport.html'">
+                    <h3>La journée sportive </h3>
+                    <img src="assets/image/activites/journee-sportive.jpeg" alt="journée sportive">
+                    <p>
+                        Une journée remplie d'énergie et d'excitation où tous les élèves se rassemblent
+                         pour participer à différentes activités sportives.
+                    </p>
                 </div>
-                <div class="school">
-                    <img src="img/logos/estp.png" alt="ENSTP">
-                    <p>Crée en 1963, l’Ecole Nationale Supérieure des Travaux Publics (ENSTP) est localisée à Abidjan puis transférée à Yamoussoukro en 1979. en 1996, l’ESTP est créée </p>
-                    <p><i class="fa-solid fa-link"></i><a href="https://estp.inphb.ci">Visitez le site officiel</a></p>
+                <!-- <div class="plus"  onclick="self.location.href='news.html'">
+                    <span ><i class="fa-solid fa-plus"></i></span>
+                </div> -->
+            </div>
+        </section>
+            
+            
+            
+           
+    </main>
+    
+    
+    <div class="newsletter">
+        <div class="newsletter__texte"> <i class="fa-solid fa-square-rss"></i> NE MANQUEZ PLUS AUCUNE NOUVELLE DE LA FILIERE BCPST </div>
+        <h3>Abonnez vous à la newsletter ! <span class="icon"><i class="fa-sharp fa-solid fa-typewriter"></i></span></h3>
+        <div class="xcontainer">
+            <form class="search-form">
+            <label for="email"></label><p>Email</p><input id="email-input" type="email" placeholder="prenom.nom@inphb.ci">
+            <button type="submit" title="search-form" onclick="self.location.href='work.html'" class="circle-button" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+            
+    <footer>
+        <div class="footer">
+            <div class="footer__bloc1">
+
+                <div class="footer__adresse">
+                    <img class ="logo-acpb" src="assets/logos/logo-acpb.jpg" alt="logo-acpb">
+                    <div class="footer__adresse--texte">
+                        <p>Email : acpb_inphb@gmail.com</p>
+                        <p>Service en ligne : www.acpb.com</p>
+                    </div>
                 </div>
-                <div class="school">
-                    <img src="img/logos/escae.png" alt="escae">
-                    <p>L’ESCAE, en sa qualité de business school, favorise la production intellectuelle en vue de l'enrichissement des idées
-                        l’ESCAE, Ecole de Management, ambitionne de préparer des leaders porteurs de valeurs de compétitivité, de modernisation 
-                        et de créativité.</p>
-                    <p><i class="fa-solid fa-link"></i><a href="http://www.escae.inphb.ci/vues/escae/">Visitez le site officiel</a></p>
+                
+                <div class="footer__media">
+                    <div><a href="#" class="icon">  <i class="fa-brands fa-square-facebook"></i> </a></div>
+                    <div><a  class="icon" href="#"> <i class="fa-brands fa-twitter"></i> </a></div>
+                    <div><a  class="icon" href="#"> <i class="fa-brands fa-linkedin"></i> </a></div>
+                    <div><a  class="icon" href="#"> <i class="fa-brands fa-square-instagram"></i> </a></div>
+                    <div><a  class="icon" href="#"> <i class="fa-solid fa-envelope"></i> </a></div>
+                    <div><a  class="icon" href="#"> <i class="fa-brands fa-square-whatsapp"></i> </a></div>
+
                 </div>
+                <p class="footer__adresse--texte">INP-HB <br> Yamoussoukro <br>Côte d'Ivoire</p>
+            </div>
+
+            <div class="footer__bloc2">
+                <nav>
+                    <ul>
+                        <li><a href="activites.html">ACTIVITES</a></li>
+                        <li><a href="contact.html">CONTACTS</a></li> 
+                        <li><a href="president.html">ANCIENS PRESIDENTS</a></li>
+                        <li><a href="album.html">ALBUMS</a></li>
+                        <li><a href="work.html">ALUMNIS</a></li>
+                        <li><a href="work.html">POSEZ VOS QUESTIONS</a></li>
+                        <li><a href="work.html"> CONSEILS DES AINES</a></li>
+                        <li><a href="concours.html">DEBOUCHERS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__bloc3">
+                        <a href="carriere/esa.html" class="lien-logo"><img src="assets/logos/esa.png" alt="logo-esa"></a>
+                        <a href="carriere/esmg.html" class="lien-logo"><img src="assets/logos/esmg.png" alt="logo-esmg"> </a>
+                        <a href="carriere/esi.html" class="lien-logo"><img src="assets/logos/esi.png" alt="logo-esi"></a>
+                        <a href="carriere/escae.html" class="lien-logo"><img src="assets/logos/escae.png" alt="logo-escae"></a> 
+                        <a href="carriere/espe.html" class="lien-logo"><img src="assets/logos/espe.png" alt="logo-espe"></a>
+                        <a href="carriere/espe.html" class="lien-logo"><img src="assets/logos/ega.png" alt="logo-espe"></a>
+
             </div>
         </div>
-    </main>
+                
+        </div>
+
+
+        <div class="droit">
+            Copyright © Janvier 2024 ACPB Tous droits réservés.| Designed by <a href="https://boristanoh.github.io/site-personnel-/" target="_blank"> TEHUA BORIS</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+        
+   
 
       
 </body>
