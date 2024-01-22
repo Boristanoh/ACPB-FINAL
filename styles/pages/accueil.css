@@ -20,7 +20,7 @@ i{
     
      /* background-image: url("/img/gog1.jpg"); */
     opacity: 0.8;
-
+    background-attachment: fixed;
     background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
@@ -371,6 +371,10 @@ i{
         flex-direction: column-reverse;
      
     }
+    .start{
+        height: auto;
+        gap: 4rem;
+      }
    
     .about__what{ 
         font-size: 1.5rem;
