@@ -372,8 +372,9 @@ i{
      
     }
     .start{
-        height: auto;
+        height: 100vh;
         gap: 4rem;
+        background-attachment: scroll;
       }
    
     .about__what{ 
