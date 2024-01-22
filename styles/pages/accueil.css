@@ -372,8 +372,6 @@ i{
      
     }
     .start{
-        height: 100vh;
-        gap: 4rem;
         background-attachment: scroll;
       }
    
