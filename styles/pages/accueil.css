@@ -21,7 +21,7 @@ i{
      /* background-image: url("/img/gog1.jpg"); */
     opacity: 0.8;
     background-attachment: fixed;
-     background-size: cover;
+     background-size: contain;
      background-position: center;
      align-items: center;
      justify-content: center;
