@@ -14,12 +14,7 @@
 .bloc__contact{
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-
-    }
-    
+    grid-template-columns: 1fr 1fr; 
 }
 
 .formulaire{
@@ -62,8 +57,7 @@
        
     }
 
-
-    .infocontact__information__bloc{
+.infocontact__information__bloc{
         background: linear-gradient(to right, rgba(255, 255, 255, 0.918), rgba(206, 221, 255, 0.733));
             display: flex;
             flex-direction: column;
@@ -73,13 +67,20 @@
             height: 7rem;
             gap: 0.5rem;
             box-shadow: 0rem 0rem 0.5rem black;
-            margin-bottom: 4rem;
-            
-            @media screen and (max-width: 768px) {
-                margin: auto;
-                margin-bottom: 2rem;
-        
-            }
-        }
+            margin-bottom: 4rem;  
+         
+    }
     
+@media screen and (max-width: 768px) {
+    .infocontact__information__bloc{
+        margin: auto;
+            margin-bottom: 2rem;
+    }
+
+    .bloc__contact{
+        grid-template-columns: 1fr;
+
+    }
+}
+
 
