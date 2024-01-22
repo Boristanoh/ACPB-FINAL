@@ -22,8 +22,7 @@ i{
     opacity: 0.8;
     background-attachment: fixed;
      background-size: cover;
-     background-clip: border-box;
-     background-repeat: no-repeat;
+     
      background-position: center;
      align-items: center;
      justify-content: center;
