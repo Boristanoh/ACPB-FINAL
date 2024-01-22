@@ -238,10 +238,15 @@ i{
     display: flex;
     gap: 1rem;
     align-items: center;
-    @media screen and (max-width: 768px) {
+ 
+}
+@media screen and (max-width: 768px) {
+    .about{
         flex-direction: column-reverse;
         background-color: brown;
+     
     }
+   
 }
 
 
