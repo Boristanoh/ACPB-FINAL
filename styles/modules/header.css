@@ -81,7 +81,7 @@ header nav ul li a:hover,.navbarlink--actu{
     display: flex;
     justify-content: flex-end;
     padding: 0px;
-    @media screen  and (min-width: 901px){
+    @media screen  and (min-width: 768px){
         display: none;
          
          
@@ -106,7 +106,7 @@ header nav ul li a:hover,.navbarlink--actu{
 
 
 
-@media screen  and (max-width: 900px){
+@media screen  and (max-width: 768px){
     .navbarlink{ 
         display: none;
   
