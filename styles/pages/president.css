@@ -1,10 +1,17 @@
-section div{
+.bloc__preisdent{
     box-shadow: 0rem 0rem 0.5rem black;
     padding: 2rem 1rem;
     width: 20rem;
     height: 5rem;
     border-radius: 15px;
     background-color: var(--white);
+    
+}
+
+.presi{
+    width: 15rem;
+    height: 12rem;
+    text-align: center;
 }
 
 section{
@@ -14,4 +21,18 @@ section{
     align-items: center;
     justify-content: center;
     
+}
+
+.bloc__preisdent img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.bloc__preisdent div{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
