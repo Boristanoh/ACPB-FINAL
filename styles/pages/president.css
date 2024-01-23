@@ -10,7 +10,7 @@
 
 .presi{
     width: 15rem;
-    height: 15rem;
+    height: 18rem;
     text-align: center;
 }
 
@@ -24,8 +24,8 @@ section{
 }
 
 .bloc__preisdent img{
-    height: 9rem;
-    width: 9rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
 }
 
