@@ -59,6 +59,7 @@
     :root {
       /* Mobile Variables */
       --title2-font-size: 1rem;
+      --header-font-size:4.5rem;
 
     }
   }
@@ -142,6 +143,7 @@ h2 {
     font-size: var(--title-font-size);
     line-height: var(--title-line-height);
     color: var(--black);
+    line-height: 2.5rem;
     margin: 2rem 0rem 2rem 0rem;
     /* text-decoration: underline var(--green-highlight); */
     position: relative;

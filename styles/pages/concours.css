@@ -4,7 +4,11 @@
     margin: 2rem 0rem;
     padding: 2rem;
     border-radius: 30px;
+    background-color: white;
     overflow: auto;
+
+    /* background: linear-gradient(to top, rgba(255, 255, 255, 0.918), rgba(228, 229, 233, 0.733)); */
+   
     
    
     /* border-radius: 31% 69% 55% 45% / 43% 40% 60% 57% ;
@@ -17,12 +21,13 @@
 }
 
 
+
 .logos{
     margin: 1.5rem 0rem;
 }
 
 p{
-    word-wrap: break-word;
+   word-wrap:break-word;
   overflow-wrap: break-word;
 }
 .logos img{
@@ -31,3 +36,13 @@ p{
    width: 70px;
 }
 
+.logos img:hover{
+    opacity: 0.5;
+}
+
+@media (max-width: 420px) {
+    .logos img{
+        height: 60px;
+        width: 60px;
+     }
+}
