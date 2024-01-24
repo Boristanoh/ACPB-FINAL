@@ -1,28 +1,33 @@
 .bloc__preisdent{
     box-shadow: 0rem 0rem 0.5rem black;
     padding: 2rem 1rem;
+
     
     border-radius: 15px;
     /* background-color: var(--white); */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.918), rgba(206, 221, 255, 0.3));
+    /* z-index: 0; */
 
     transition: transform 500ms ease-in-out;
 
     
 }
 .bloc__preisdent::after{
-    content: '';
-    position: absolute;
-    width: 20rem;
-    height: 5rem;
+    content: "";
+    position: relative;
+
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: red;
-    opacity: 0;
-    z-index: -1;
+    opacity: 1;
+    z-index:  -1;
 }
+
+/* .bloc__preisdent::after:hover{
+    opacity: 1;
+} */
 
 .presi{
     width: 15rem;
