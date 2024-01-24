@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (i < textToAnimate.length) {
         textElement.textContent += textToAnimate.charAt(i);
         i++;
-        setTimeout(type, 100); // Contrôle la vitesse de frappe
+        setTimeout(type, 70); // Contrôle la vitesse de frappe
       } else {
         // Appel de la fonction de rappel une fois que le texte est entièrement écrit
         callback();

@@ -133,8 +133,24 @@ h1 {
     text-align: center;
     background:linear-gradient(to bottom left,var(--light-blue), var(--green-highlight));
     /* background:linear-gradient(to bottom left,rgb(0, 141, 54), #00da49); */
+    animation: apparait2 1s ease-in-out 50ms both;
     
 } 
+
+
+@keyframes apparait2 {
+  0%{
+  
+      transform: translateX(-200px);
+      opacity: 0; 
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+  
+}
 
 h2 {
     font-family: var(--title-font);

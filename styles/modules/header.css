@@ -28,6 +28,7 @@ header nav ul li a:hover,.navbarlink--actu{
 
 
 .navbar{
+    animation: apparait1 1s ease-in-out 200ms backwards;
     background-color: var(--white);
     box-shadow: 0px 0px 10px var(--black);
     width: 96%;
@@ -43,7 +44,8 @@ header nav ul li a:hover,.navbarlink--actu{
     top: 0.7rem;
     right: 1rem;
     margin: auto;
-    z-index: 1;
+    z-index: 3;
+    
 }
 
 .navbar__logo--image1{
@@ -160,3 +162,17 @@ header nav ul li a:hover,.navbarlink--actu{
 }
 
 
+
+@keyframes apparait1 {
+    0%{
+    
+        transform: translateY(-100px);
+        opacity: 0; 
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}

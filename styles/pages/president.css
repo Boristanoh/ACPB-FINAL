@@ -9,7 +9,7 @@
     /* z-index: 0; */
 
     transition: transform 500ms ease-in-out;
-    animation: apparait 1s cubic-bezier(.73,.01,.2,.99) 100ms both;
+    animation: apparait 1s cubic-bezier(.73,.01,.2,.99) 250ms both;
 
     
 }
@@ -63,6 +63,8 @@ section{
     align-items: center;
     flex-direction: column;
 }
+
+
 
 @keyframes apparait {
     0%{
