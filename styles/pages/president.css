@@ -9,7 +9,8 @@
     /* z-index: 0; */
 
     transition: transform 500ms ease-in-out;
-    animation: apparait 1s cubic-bezier(.73,.01,.2,.99) 250ms both;
+    animation: animation-entrer-haut 700ms ease-in-out forwards;
+  
 
     
 }
@@ -64,17 +65,19 @@ section{
     flex-direction: column;
 }
 
+/* .animation-entrer-haut{
+    animation: animation-entrer-haut 700ms ease-in-out forwards;
+} */
 
-
-@keyframes apparait {
+@keyframes animation-entrer-haut {
     0%{
     
         transform: translateY(100%);
         opacity: 0; 
     }
     50%{
-        opacity: 0;
-        transform: translateY(50%);
+       
+       opacity: 0.5;
         
     }
     100%{

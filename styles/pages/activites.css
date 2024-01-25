@@ -85,7 +85,7 @@ section{
 } */
 
 .animation-entrer-droit{
-    animation: animation-entrer-droit 700ms ease-in-out forwards;
+    animation: animation-entrer-droit 700ms ease-in-out both;
 }
 
 .animation-sortir-droit{
