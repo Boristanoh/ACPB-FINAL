@@ -6,6 +6,9 @@
     border-radius: 30px;
     background-color: white;
     overflow: auto;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-out, 500ms ease-in-out;
 
     /* background: linear-gradient(to top, rgba(255, 255, 255, 0.918), rgba(228, 229, 233, 0.733)); */
    
@@ -19,7 +22,6 @@
     width: min-content;
     height: min-content; */
 }
-
 
 
 .logos{
@@ -45,4 +47,23 @@ p{
         height: 60px;
         width: 60px;
      }
+}
+
+
+.concoursInternes > div.animation-entrer-haut{
+    opacity: 1;
+    transform: translateY(0);
+}
+.concoursExternes > div.animation-entrer-haut{
+    opacity: 1;
+    transform: translateY(0);
+}
+h2{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-out, 500ms ease-in-out;
+}
+h2.animation-entrer-haut{
+    opacity: 1;
+    transform: translateY(0);
 }

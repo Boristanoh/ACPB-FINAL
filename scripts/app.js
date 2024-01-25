@@ -120,44 +120,71 @@ document.addEventListener("DOMContentLoaded", function() {
   // Liste des classes à traiter
 
 
-  var bloc__preisdent= document.querySelectorAll(".bloc__preisdent");
+  var bloc__concours= document.querySelectorAll(".concoursInternes > div,.concoursExternes > div,h2");
+  console.log(bloc__concours)
+  
+
+  // Écouter l'événement de scroll et appeler la fonction pour chaque classe
+  document.addEventListener("scroll", function() {
+    bloc__concours.forEach(function(className) {
+      checkVisibilityAniamtionhaut(className,"animation-entrer-haut");
+      console.log("scroll")
+    });
+  });
+
+  // Appeler la fonction pour vérifier la visibilité au chargement du DOM pour chaque classe
+  bloc__concours.forEach(function(className) {
+    checkVisibilityAniamtionhaut(className,"animation-entrer-haut");
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Liste des classes à traiter
+
+
+  var bloc__preisdent= document.querySelectorAll(".presi");
   
 
   // Écouter l'événement de scroll et appeler la fonction pour chaque classe
   document.addEventListener("scroll", function() {
     bloc__preisdent.forEach(function(className) {
-      checkVisibility(className,"animation-entrer-haut");
+      checkVisibilityAniamtionhaut(className,"animation-entrer-haut");
     });
   });
 
   // Appeler la fonction pour vérifier la visibilité au chargement du DOM pour chaque classe
   bloc__preisdent.forEach(function(className) {
-    checkVisibility(className,"animation-entrer-haut");
+    checkVisibilityAniamtionhaut(className,"animation-entrer-haut");
   });
 });
 
+
+
 // Fonction pour vérifier la visibilité pour une classe donnée
-function checkVisibility(className,animation) {
+function checkVisibilityAniamtionhaut(className,animation) {
 //   var element = document.querySelector(className);
-  var isVisible1 = false; // Booléen pour suivre si l'élément est déjà visible
+  
   
 
   // Vérifier si l'élément est potentiellement visible
-  if (!isVisible1) {
-    var position = className.getBoundingClientRect().top;
+ 
+    var position = className.getBoundingClientRect();
     var screenHeight = window.innerHeight;
-    if (position < screenHeight * 1) {
-        // className.classList.remove(".animation-sortir-droit")
+    if (position.top < screenHeight * 0.95 ) {
+
+      if(!className.classList.contains(animation)){
+        
       className.classList.add(animation);
-      console.log(2,className)
-      isVisible1 = true; // Marquer l'élément comme visible
+      console.log(className)
+  
+    }
     }
     else{
         className.classList.remove(animation);
-        // className.classList.add(".animation-sortir-droit")
-        isVisible1 = false;
-        
     }
-  }
 
 }
+
+
+

@@ -31,7 +31,7 @@ function checkVisibility(className,animation) {
   if (!isVisible) {
     var position = className.getBoundingClientRect().top;
     var screenHeight = window.innerHeight;
-    if (position < screenHeight * 1.5) {
+    if (position < screenHeight*0.5) {
         // className.classList.remove(".animation-sortir-droit")
       className.classList.add(animation);
       isVisible = true; // Marquer l'élément comme visible
