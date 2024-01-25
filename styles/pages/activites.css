@@ -84,3 +84,40 @@ section{
   margin-top: 10rem;
 } */
 
+.animation-entrer-droit{
+    animation: animation-entrer-droit 700ms ease-in-out forwards;
+}
+
+.animation-sortir-droit{
+    animation: animation-entrer-droit 700ms ease-in-out backwards alternate-reverse;
+    background-color: red;
+}
+
+.animation-entrer-gauche{
+    animation: animation-entrer-gauche 700ms ease-in-out 100ms backwards alternate-reverse;
+}
+
+@keyframes animation-entrer-droit {
+    0%{
+        transform: translateX(-120%);
+        
+    }
+    
+    
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes animation-entrer-gauche {
+    0%{
+        transform: translateX(120%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
