@@ -85,7 +85,7 @@ section{
 } */
 
 .animation-entrer-droit{
-    animation: animation-entrer-droit 700ms ease-in-out both;
+    animation: animation-entrer-droit 700ms cubic-bezier(0.075, 0.82, 0.165, 1) both;
 }
 
 .animation-sortir-droit{
@@ -101,6 +101,9 @@ section{
     0%{
         transform: translateX(-120%);
         
+    }
+    50%{
+        opacity: 0.8;
     }
     
     

@@ -9,12 +9,12 @@
     /* z-index: 0; */
 
     transition: transform 500ms ease-in-out;
-    animation: animation-entrer-haut 700ms ease-in-out forwards;
+
   
 
     
 }
-.bloc__preisdent::after{
+/* .bloc__preisdent::after{
     content: "";
     position: relative;
 
@@ -25,7 +25,7 @@
     background-color: red;
     opacity: 1;
     z-index:  -1;
-}
+} */
 
 /* .bloc__preisdent::after:hover{
     opacity: 1;
@@ -65,24 +65,26 @@ section{
     flex-direction: column;
 }
 
-/* .animation-entrer-haut{
-    animation: animation-entrer-haut 700ms ease-in-out forwards;
-} */
+.animation-entrer-haut{
+    animation: animation-entrer-haut 700ms cubic-bezier(0.075, 0.82, 0.165, 1) both;
+}
 
 @keyframes animation-entrer-haut {
     0%{
-    
-        transform: translateY(100%);
-        opacity: 0; 
-    }
-    50%{
-       
-       opacity: 0.5;
+        transform: translateX(100%);
+        /* transform: translateX(100%); */
         
     }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
+    50%{
+        opacity: 0.8;
+        /* transform: translateX(120%);
+        transform: translateY(50%); */
     }
     
+    
+    100%{
+        transform: translateX(0);
+        /* transform: translateX(0); */
+        opacity: 1;
+    }
 }

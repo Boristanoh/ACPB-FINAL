@@ -116,48 +116,48 @@ function checkVisibility(className,animation) {
 
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   // Liste des classes à traiter
+document.addEventListener("DOMContentLoaded", function() {
+  // Liste des classes à traiter
 
 
-//   var bloc__preisdent= document.querySelectorAll(".bloc__preisdent");
+  var bloc__preisdent= document.querySelectorAll(".bloc__preisdent");
   
 
-//   // Écouter l'événement de scroll et appeler la fonction pour chaque classe
-//   document.addEventListener("scroll", function() {
-//     bloc__preisdent.forEach(function(className) {
-//       checkVisibility(className,"animation-entrer-haut");
-//     });
-//   });
+  // Écouter l'événement de scroll et appeler la fonction pour chaque classe
+  document.addEventListener("scroll", function() {
+    bloc__preisdent.forEach(function(className) {
+      checkVisibility(className,"animation-entrer-haut");
+    });
+  });
 
-//   // Appeler la fonction pour vérifier la visibilité au chargement du DOM pour chaque classe
-//   bloc__preisdent.forEach(function(className) {
-//     checkVisibility(className,"animation-entrer-haut");
-//   });
-// });
+  // Appeler la fonction pour vérifier la visibilité au chargement du DOM pour chaque classe
+  bloc__preisdent.forEach(function(className) {
+    checkVisibility(className,"animation-entrer-haut");
+  });
+});
 
-// // Fonction pour vérifier la visibilité pour une classe donnée
-// function checkVisibility(className,animation) {
-// //   var element = document.querySelector(className);
-//   var isVisible = false; // Booléen pour suivre si l'élément est déjà visible
+// Fonction pour vérifier la visibilité pour une classe donnée
+function checkVisibility(className,animation) {
+//   var element = document.querySelector(className);
+  var isVisible1 = false; // Booléen pour suivre si l'élément est déjà visible
   
 
-//   // Vérifier si l'élément est potentiellement visible
-//   if (!isVisible) {
-//     var position = className.getBoundingClientRect().top;
-//     var screenHeight = window.innerHeight;
-//     if (position < screenHeight * 1) {
-//         // className.classList.remove(".animation-sortir-droit")
-//       className.classList.add(animation);
-//       console.log(1,className)
-//       isVisible = true; // Marquer l'élément comme visible
-//     }
-//     else{
-//         className.classList.remove(animation);
-//         // className.classList.add(".animation-sortir-droit")
-//         isVisible = false;
+  // Vérifier si l'élément est potentiellement visible
+  if (!isVisible1) {
+    var position = className.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
+    if (position < screenHeight * 1) {
+        // className.classList.remove(".animation-sortir-droit")
+      className.classList.add(animation);
+      console.log(2,className)
+      isVisible1 = true; // Marquer l'élément comme visible
+    }
+    else{
+        className.classList.remove(animation);
+        // className.classList.add(".animation-sortir-droit")
+        isVisible1 = false;
         
-//     }
-//   }
+    }
+  }
 
-// }
+}
