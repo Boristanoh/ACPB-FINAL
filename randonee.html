@@ -15,9 +15,10 @@
     
     <script src="scripts/animation.js" defer></script>
     <script src="scripts/app.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
     <script src="scripts/newsletter.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/pages/activites.css">
+    <link rel="stylesheet" href="styles/pages/randonee.css">
 </head>
 <body>
     <header>
@@ -75,68 +76,23 @@
     <script src="scripts/app.js"></script>
     <main> 
 
-        <h1>Activités</h1>
+        <h1>Randonée</h1>
 
-        <div class="main">
-            
-            <section class="sectionRandonee">
-                <h2>La Randonée</h2>
-                
-                <p>
-                    La randonnée est une aventure en plein air qui nous emmène à la découverte de la nature et de magnifiques paysages.
-                </p>
-                <div class="bloc">
-                    <img class="image__activite" src="assets/image/activites/randonnée.jpeg" alt="image randonnée">
-                    <h3 class="more__info" onclick="self.location.href='randonee.html'">Plus d'infos</h3>
-                </div>
-            </section>
-            
-            <section class="sectionAkwaba">
-                <h2>La Cérémonie d'akwaba</h2>
-                
-                <p>
-                    L'Akwaba est une cérémonie de bienvenue organisée pour souhaiter la bienvenue aux nouveaux
-                    bacheliers,mais aussi pour les féliciter de leur admission à l'INP-HB et de ce pas de leur
-                    adhésion à l'ACPB.
-                </p>
-                <div class="bloc">
-                    <img class="image__activite" src="assets/image/activites/akwaba.jpeg" alt="image akwaba">
-                    <h3 class="more__info" >Plus d'infos</h3>
-                </div>
-                    
-            </section>
+        
+        <div class="slider-container">
+            <div class="slider-content">
+              <!-- Contenu de votre slider -->
+              <div class="slide"> <img src="assets/image/activites/randonnee/SiteSud.jpg" alt=""> Site sud </div>
+              <div class="slide"> <img src="assets/image/activites/randonnee/SiteCentre.jpg" alt=""> Site centre</div>
+              <div class="slide"> <img src="assets/image/activites/randonnee/SiteNord.jpg" alt=""> Site nord </div>
+              <!-- Ajoutez autant de slides que nécessaire -->
+            </div>
+            <button class="prev-button">&lt; Précédent</button>
+             <button class="next-button">Suivant &gt;</button>
+        </div>
+        
 
-            <section class="sectionSport">
-                <h2>La journée sportive</h2>
-                
-                <p>
-                    La journée sportive est une journée remplie d'énergie et d'excitation où tous les élèves 
-                    se rassemblent pour participer à différentes activités sportives.
-                </p>
-
-                <div class="bloc">
-                    <img class="image__activite"  src="assets/image/activites/journeesportive.png" alt="image journée sportive">
-                    <h3 class="more__info">Plus d'infos</h3>
-                </div>
-                
-            </section>
-
-            <section class="sectionCarriere">
-                <h2>La journée carriere</h2>
-                
-                <p>
-                    La journée carrière est un événement spécialement conçu pour nous aider à mieux comprendre 
-                    les différentes opportunités professionnelles qui s'offrent à nous.
       
-                </p>
-
-                <div class="bloc">
-                    <img class="image__activite"  src="assets/image/activites/journee-carriere.jpg" alt="image journée sportive">
-                    <h3 class="more__info" >Plus d'infos</h3>
-                </div>
-                
-            </section>
-    </div>
             
             
             
@@ -214,44 +170,3 @@
  
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
