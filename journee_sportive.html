@@ -12,10 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <script src="scripts/animation.js" defer></script>
     <script src="scripts/app.js" defer></script>
-    <script src="newsletter.js"></script>
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/newsletter.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/pages/concours.css">
+    <link rel="stylesheet" href="styles/pages/journee_sportive.css">
 </head>
 <body>
     <header>
@@ -49,9 +52,9 @@
                 <ul>
                     <li> <a href="index.html"> <i class="fa-solid fa-home"></i>Accueil</a> </li>
                     <li><a href="news.html" ><i class="fa-solid fa-newspaper"></i>News</a></li>
-                    <li><a href="concours.html"  class="navbarlink--actu"><i class="fa-solid fa-school"></i>Concours</a></li>
+                    <li><a href="concours.html"><i class="fa-solid fa-school"></i>Concours</a></li>
                     <!-- <li><i class="fa-solid fa-book"></i><a href="biblio.html">Bibliotheque</a></li> -->
-                    <li><a href="activites.html"><i class="fa-solid fa-heart"></i>Activités</a></li>
+                    <li><a href="activites.html"  class="navbarlink--actu"><i class="fa-solid fa-heart"></i>Activités</a></li>
                     <li><a href="album.html"><i class="fa-solid fa-image"></i>Albums</a></li>
                     <!-- <li><i class="fa-solid fa-user-doctor"></i><a href="carriere.html">Anciens Présidents</a></li> -->
                     <li><a href="contact.html"><i class="fa-solid fa-address-card"></i>Contact</a></li>
@@ -70,148 +73,119 @@
             
         </div>
     </header>
-
+    <script src="scripts/app.js"></script>
     <main> 
 
-        <h1>Concours</h1>
-
-        <section class="concoursInternes">
-            <h2>Concours INP-HB ( GBINZIN ) </h2>
-
-            <div class="concoursInternes__a2gp">
-                <h3>Concours A2GP(Agronomie,Géo-ressources et Génie des Procédés)</h3>
-                <div class="logos">
-                    <img src="assets/logos/esa.png" alt="logo">
-                    <img src="assets/logos/ete.png" alt="logo">
-                    <img src="assets/logos/esmg.png" alt="logo">
-                    <img src="assets/logos/espe.png" alt="logo">
-                    <img src="assets/logos/esi.png" alt="logo">
-                </div>
-                <p> <b>Ecoles :</b> ESA,ESI,ESMG,ESPE</p>
-                <p><b>Epreuves :</b> Ecrites</p>
-                <p><b>Date de compo :</b> Mi-Mai</p>
-                <p><b>Date de résultats :</b> Fin juin</p>
-                <p><b>Matières :</b> Mathématiques,Informatique,Physique,Biologie,Francais,Anglais,Chimie,Géologie</p>
-                <p><b>Frais d'inscription :</b> 20 000 fr CFA</p>
-                <p><b>Lieu de composition :</b> Yamoussoukro et Abidjan</p>
-
-            </div>
-
-            <div class="concoursInternes__cae">
-                <h3>Concours CAE(Commerce et Administration des Entreprises)</h3>
-                <div class="logos">
-                    <img src="assets/logos/ilt.png" alt="logo">
-                    <img src="assets/logos/hea.png" alt="logo">
-                </div>
-                <p><b>Ecoles :</b> ESCAE</p>
-                <p><b>Epreuves :</b> Ecrites</p>
-                <p><b>Date de compo :</b> Mi-Mai</p>
-                <p><b>Date de résultats :</b> Fin juin</p>
-                <p><b>Matières :</b> Mathématiques,Culture générale,Anglais</p>
-                <p><b>Frais d'inscription :</b> 20 000 fr CFA</p>
-                <p><b>Lieu de composition :</b> Yamoussoukro et Abidjan</p>
-
-            </div>
-
-            <div class="concoursInternes__ita">
-                <h3>Concours ITA(ingénieurs des Techniques Agricoles)</h3>
-                <div class="logos">
-                    <img src="assets/logos/esa.png" alt="logo">
-                    
-                </div>
-                <p><b>Ecoles :</b> ESA</p>
-                <p><b>Epreuves :</b> Ecrites</p>
-                <p><b>Date de compo :</b> Mi-Mai</p>
-                <p><b>Date de résultats :</b> Fin juin</p>
-                <p><b>Matières :</b> Mathématiques,Physique-Chimie,Biologie,Francais,Anglais,Géologie</p>
-                <p><b>Frais d'inscription :</b> 20 000 fr CFA</p>
-                <p><b>Lieu de composition :</b> Yamoussoukro et Abidjan</p>
-
-            </div>
-        </section>
-
-
-        <section class="concoursExternes">
-            <h2>Concours Extérieurs </h2>
-            <div class="concoursexternes__ega">
-                <h3>Concours Eg@(Euro Graduation  Access)</h3>
-                <div class="logos">
-                    <img src="assets/logos/ega.png" alt="logo">
-                </div>
-                <p>Ecoles : EFREI,CESI,EIVP,ENSIM,ESA,EBI,ISTOM,ITECH-LYON,ISMANS CESI</p>
-                <p>Epreuves : Ecrites et entretien de motivation</p>
-                <p>Date de compo : Mars</p>
-                <p>Date de résultats : Avril/Mai</p>
-                <p>Matières : Mathématiques,Physiques,Informatique,Francais,Anglais</p>
-                <p>Frais d'inscription : 50 000 fr CFA</p>
-                <p>Lieu de composition : Yamoussoukro</p>
-
-            </div>
-
-            <div class="concoursInternes__caeas">
-                <h3>Concours CEAS(Commerce et Administration des Entreprises)</h3>
-                <div class="logos">
-                    
-                    <img src="assets/logos/escae.jpg" alt="logo">
-                    <img src="assets/logos/escae.jpg" alt="logo">
-                </div>
-                
-                <p>Epreuves : Ecrites et Entretien de motivaation</p>
-                <p>Date de compo : Mi-Mai</p>
-                <p>Date de résultats : Fin juin</p>
-                <p>Matières : Mathématiques 1,Mathématiques ou probabilité,Francais,Anglais</p>
-                <p>Frais d'inscription : 40€+(20€ par école)</p>
-                <p>Lieu de composition : Abidjan</p>
-
-            </div>
-
-            <div class="concoursInternes__ise">
-                <h3>Concours ISE-MATHS(ingénieur Statiticien Econàmiste)</h3>
-                <div class="logos">
-                    <img src="assets/logos/ensea.png" alt="logo">
-                    
-                </div>
-                <p>Epreuves : Ecrites</p>
-                <p>Date de compo : Début Avril</p>
-                <p>Date de résultats : Fin juin</p>
-                <p>Matières : Mathématiques 1,Mathématiques 2,Composition d'ordre générale,Contraction de texte</p>
-                <p>Frais d'inscription : 10 000 fr CFA</p>
-                <p>Lieu de composition : Yamoussoukro</p>
-
-            </div>
-
-            <div class="concoursInternes__estp">
-                <h3>Concours ESTP PARIS</h3>
-                <div class="logos">
-                    <img src="assets/logos/estp.png" alt="logo">
-                  
-                </div>
-                <p>Epreuves : Ecrites</p>
-                <p>Date de compo : Mi-Avril</p>
-                <p>Date de résultats : juin</p>
-                <p>Matières : Mathématiques,Physiques,Francais,Anglais</p>
-                <p>Frais d'inscription : 30 000 fr CFA</p>
-                <p>Lieu de composition : Yamoussoukro et Abidjan</p>
-
-            </div>
-
-            <div class="concoursInternes__x">
-                <h3>Concours FUI-FF</h3>
-                <div class="logos">
-                    <img src="assets/logos/x.png" alt="logo">
-                </div>
-                <p>Ecoles : X-Polytechnique de Paris</p>
-                <p>Epreuves : Ecrites,Orales et entretien de motivation</p>
-                <p>Date de compo : Début mars</p>
-                <p>Date de résultats : Début Avril/mai</p>
-                <p>Matières : Mathématiques,Physique,Anglais,Francais</p>
-                <p>Frais d'inscription : gratuit pour l'instant</p>
-                <p>Lieu de composition : Yamoussoukro</p>
-
-            </div>
-        </section>
+        <div class="start">
       
+            <div class="texte">
+                JOURNEE SPORTIVE
+            </div>
+           
+        </div>
+        <section>
+        <p>
+            Bienvenue dans le tourbillon effervescent de la Journée Sportive de l'ACPB, l'événement qui transforme notre campus en une arène épique de compétition, de rires et d'unité. Préparez-vous à une journée où chaque instant est chargé 
+            d'excitation et où la communauté de l'ACPB célèbre le sport, la camaraderie et la passion qui nous animent.
+        </p>
+        <h2>Galérie visuelle</h2>
+        <p>
+            Explorez notre galerie visuelle pour plonger dans l'atmosphère vibrante des éditions précédentes : des sourires radieux, des exploits sportifs mémorables et une énergie électrisante qui défie les mots.
+        </p>
+         </section >
 
+         <section class="galerie">
+            <a href="assets/image/galerie/year2024/image1.JPG" class="lien-conteneur-image">
+                <img src="assets/image/galerie/year2024/image1.JPG" alt="">
+                <div class="photo-hover">Voir la photo</div>
+            </a>
+            <a href="assets/image/galerie/year2024/image2.JPG" class="lien-conteneur-image">
+                <img src="assets/image/galerie/year2024/image2.JPG" alt="">
+                <div class="photo-hover">Voir la photo</div>
+            </a>
+            <a href="assets/image/galerie/year2024/image3.PNG" class="lien-conteneur-image">
+                <img src="assets/image/galerie/year2024/image3.PNG" alt="">
+                <div class="photo-hover">Voir la photo</div>
+            </a>
+            <a href="assets/image/galerie/year2024/image4.PNG" class="lien-conteneur-image">
+                <img src="assets/image/galerie/year2024/image4.PNG" alt="">
+                <div class="photo-hover">Voir la photo</div>
+            </a>
+            <a href="assets/image/galerie/year2024/image5.PNG" class="lien-conteneur-image">
+                <img src="assets/image/galerie/year2024/image5.PNG" alt="">
+                <div class="photo-hover">Voir la photo</div>
+            </a>
+            <a href="assets/image/galerie/year2024/image6.PNG" class="lien-conteneur-image">
+                <img src="assets/image/galerie/year2024/image6.PNG" alt="">
+                <div class="photo-hover">Voir la photo</div>
+            </a>
+            <a href="assets/image/galerie/year2024/image7.JPG" class="lien-conteneur-image">
+                <img src="assets/image/galerie/year2024/image7.JPG" alt="">
+                <div class="photo-hover">Voir la photo</div>
+            </a>
+            <a href="assets/image/galerie/year2024/image8.JPG" class="lien-conteneur-image">
+                <img src="assets/image/galerie/year2024/image8.JPG" alt="">
+                <div class="photo-hover">Voir la photo</div>
+            </a>
+            <a href="assets/image/galerie/year2024/image9.JPG" class="lien-conteneur-image">
+                <img src="assets/image/galerie/year2024/image9.JPG" alt="">
+                <div class="photo-hover">Voir la photo</div>
+            </a>
+<!--             
+            <img src="assets/image/galerie/year2024/image2.JPG" alt="">
+            <img src="assets/image/galerie/year2024/image3.PNG" alt="">
+            <img src="assets/image/galerie/year2024/image4.PNG" alt="">
+            <img src="assets/image/galerie/year2024/image5.PNG" alt="">
+            <img src="assets/image/galerie/year2024/image6.PNG" alt="">
+            <img src="assets/image/galerie/year2024/image7.JPG" alt="">
+            <img src="assets/image/galerie/year2024/image8.JPG" alt="">
+            <img src="assets/image/galerie/year2024/image9.JPG" alt=""> -->
+
+         </section>
+    
+   
+
+    <section>
+
+        <h2>Qu'est ce que c'est :</h2>
+        <p>
+            Bienvenue dans l'épopée annuelle qui transcende le simple domaine du sport. La 'Journée Sportive de l'ACPB' n'est pas qu'un événement sportif, c'est une odyssée,
+             une aventure qui nous unit en une communauté vibrante. Imaginez-vous plonger dans un univers où la compétition s'entrelace avec la camaraderie, où chaque cri d'encouragement devient 
+             une symphonie de soutien. Cette journée n'est pas simplement un rendez-vous sportif, c'est une célébration, une odyssée sportive et communautaire qui éclaire notre année de son éclat unique
+        </p>
+    </section>
+
+    <section>
+
+        <h2> Déroulement </h2>
+        <p>
+   
+
+            Dès le coup d'envoi de cette journée mémorable, plongez dans un monde où l'excitation règne en maître. Des compétitions de haut niveau, des activités divertissantes et des moments de détente 
+            s'entremêlent pour créer une expérience inoubliable. De l'ouverture flamboyante aux remises de trophées,chaque moment est orchestré pour offrir un spectacle captivant.
+        </p>
+    </section>
+
+    <section>
+
+        <h2> Objectifs</h2>
+        <p>
+                <b>Notre objectif ultime?</b> <br>Renforcer les liens au sein de notre communauté. La Journée Sportive est une toile où chacun, qu'il soit joueur, supporter ou spectateur, contribue à créer une œuvre d'art collective.
+                 À la fin de la journée, nous avons non seulement des gagnants sur le terrain, mais aussi une communauté plus soudée, prête à relever tous les défis.
+        </p>
+    </section>
+
+
+
+
+
+    
+
+        
+       
+        
+
+      
             
             
             

@@ -179,7 +179,7 @@ h2::before {
     height:3rem ;
     
     border-left: 0.4rem var(--light-blue) solid;
-    transform: translateY(-1rem);
+    transform: translateY(-0.5rem);
   }
 
  
