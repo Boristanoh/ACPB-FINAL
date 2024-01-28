@@ -1,0 +1,83 @@
+@import '../variable.css';
+
+.citation{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+.bloc__citation{
+    box-shadow: 0rem 0rem 0.5rem black;
+    padding: 1rem 1rem;
+    height: 13rem;
+    width: 24rem;
+    border-radius: 15px;
+    /* background-color: var(--white); */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.918), rgba(206, 221, 255, 0.8));
+    /* z-index: 0; */
+    transition: transform 500ms ease-in-out;
+}
+
+.bloc__citation div{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+.bloc__citation img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.bloc__citation:hover{
+    transform: scale(1.1);
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.918), rgba(206, 221, 255, 0.8)) */
+}
+
+
+.formulaire{
+    padding: 1rem 1rem 1rem 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    width: 90%;
+    height: 28rem;
+    /* animation: entrer-gauche 1s 500ms cubic-bezier(0.075, 0.82, 0.165, 1) both; */
+}
+.formulaire input,.formulaire textarea{
+        
+        font-size: 1.2rem;
+        border: 0px;
+        border-bottom: 0.15rem solid black
+}
+
+    
+        /* &:focus{
+            outline: none;
+            border-width: 0.1rem 0.1rem 0.15rem 0.1rem;
+            border-style: solid;
+            border-color: black;
+         */
+    
+
+ form  button{
+        
+        width: 10rem;
+        height: 2rem;
+        background-color: var(--light-blue);
+        border-color: var(--light-blue);
+        color:white;
+        border-radius: 15px;
+        /* transition: transform 450ms ease-in-out, background-color 300ms 150ms ease-in-out; */
+       
+    }
