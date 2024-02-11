@@ -49,8 +49,8 @@
         
         width: 10rem;
         height: 2rem;
-        background-color: red;
-        border-color: red;
+        background-color: var(--light-blue);
+        border-color: var(--light-blue);
         color:white;
         border-radius: 15px;
         /* transition: transform 450ms ease-in-out, background-color 300ms 150ms ease-in-out; */

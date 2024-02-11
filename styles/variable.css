@@ -35,7 +35,7 @@
     
     --body-line-height: 1.7rem;
     --body-highlight-line-height: 1.5rem;
-    --header-line-height: 5.375rem;
+    --header-line-height: 6rem;
     --title-line-height: 1.75rem;
 }
 
@@ -50,7 +50,7 @@
     
       --body-line-height: 1.25rem;
       --body-highlight-line-height: 1.25rem;
-      --header-line-height: 3rem;
+      --header-line-height: 4rem;
       --title-line-height: 1.5rem;
     }
   }
@@ -92,6 +92,7 @@ body {
 }
 h3{
     font-size: var(--title2-font-size);
+    line-height: 2rem;
 }
 /* 
 font-family: 'Bebas Neue', sans-serif;
