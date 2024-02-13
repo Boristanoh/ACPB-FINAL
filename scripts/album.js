@@ -29,8 +29,8 @@ function ajout_photo(chemin){
     let baliseDiv = document.createElement("div")
 
     try{
-        baliseLien.href =`assets/image/galerie/${chemin.toLowerCase()}/image${i}.JPG`
-        baliseImage.src=`assets/image/galerie/${chemin.toLowerCase()}/image${i}.JPG`
+        baliseLien.href =`assets/image/galerie/${chemin.toLowerCase()}/image${i}.jpg`
+        baliseImage.src=`assets/image/galerie/${chemin.toLowerCase()}/image${i}.jpg`
         console.log("ahhhhhhhhhhhh")
     }catch(error){
         baliseLien.href =`assets/image/galerie/${chemin.toLowerCase()}/image${i}.PNG`
