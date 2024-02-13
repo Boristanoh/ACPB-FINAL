@@ -59,12 +59,12 @@ function ajout_photo(chemin) {
         let extension;
 
         // Vérifier si l'image existe en JPG
-        cheminImage = `assets/image/galerie/${chemin.toLowerCase()}/image${index}.jpg`;
+        cheminImage = `assets/image/galerie/${chemin.toLowerCase()}/image${index}.JPG`;
         extension = "jpg";
 
         // Si l'image JPG n'existe pas, utiliser l'extension PNG
         if (!imageExisteSync(cheminImage)) {
-            cheminImage = `assets/image/galerie/${chemin.toLowerCase()}/image${index}.png`;
+            cheminImage = `assets/image/galerie/${chemin.toLowerCase()}/image${index}.jpg`;
             extension = "png";
         }
 
