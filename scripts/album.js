@@ -76,6 +76,7 @@ function ajout_photo(chemin) {
         if (imageExiste) {
             baliseLien.href = cheminImage;
             baliseImage.src = cheminImage;
+            baliseImage.loading="lazy"
             
 
 
