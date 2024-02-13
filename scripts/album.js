@@ -46,7 +46,8 @@ promo.forEach((element,index)=>{
 
 function ajout_photo(chemin) {
     const galerie = document.querySelector(".galerie");
-   
+    const imagesToPreload = []; // Créez une liste des chemins des images à précharger
+
 
     let index = 1;
     let imageExiste = true;
@@ -74,8 +75,11 @@ function ajout_photo(chemin) {
        
 
         if (imageExiste) {
+           
             baliseLien.href = cheminImage;
             baliseImage.src = cheminImage;
+
+          
             baliseImage.loading="lazy"
             
 
@@ -84,6 +88,10 @@ function ajout_photo(chemin) {
             baliseDiv.className = "photo-hover";
             baliseDiv.textContent = "Voir la photo";
             baliseLien.className = "lien-conteneur-image";
+            imagesToPreload.push(cheminImage);
+
+            
+
             baliseLien.addEventListener('click', function(event) {
                 event.preventDefault(); // Empêcher le comportement par défaut de l'élément <a>
                 // Ajouter votre logique pour afficher l'image en grand ici
@@ -100,6 +108,7 @@ function ajout_photo(chemin) {
             index++;
         }
     }
+    preloadImages(imagesToPreload);
     // Modifier l'historique de navigation après l'ajout des images
     history.pushState(null, null, window.location.pathname);
 
@@ -124,4 +133,10 @@ function afficherImageEnGrand(imageUrl) {
     const modalImage = document.getElementById('modal-image');
     modalImage.src = imageUrl; // Définir la source de l'image dans la fenêtre modale
     modal.style.display = 'block'; // Afficher la fenêtre modale
+}
+function preloadImages(images) {
+    for (let imagePath of images) {
+        const img = new Image();
+        img.src = imagePath;
+    }
 }
