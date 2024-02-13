@@ -6,13 +6,13 @@ console.log(promo)
 console.log("promo4")
 galerie.innerHTML =""
 
-// const modal = document.getElementById('modal');
-// const closeBtn = document.querySelector('.close');
+const modal = document.getElementById('modal');
+const closeModal = document.querySelector('.close__modal');
 
-// // Ajoutez un gestionnaire d'événements pour le clic sur le bouton de fermeture
-// closeBtn.addEventListener('click', function() {
-//     modal.style.display = 'none'; // Masquer la fenêtre modale lors du clic sur le bouton de fermeture
-// });
+// Ajoutez un gestionnaire d'événements pour le clic sur le bouton de fermeture
+closeModal.addEventListener('click', function() {
+    modal.style.display = 'none'; // Masquer la fenêtre modale lors du clic sur le bouton de fermeture
+});
 
 
 ajout_photo("promotion 58")
@@ -86,6 +86,7 @@ function ajout_photo(chemin) {
             baliseLien.addEventListener('click', function(event) {
                 event.preventDefault(); // Empêcher le comportement par défaut de l'élément <a>
                 // Ajouter votre logique pour afficher l'image en grand ici
+                afficherImageEnGrand(cheminImage);
               
             });
            
@@ -112,9 +113,14 @@ function ajout_photo(chemin) {
 
 // Fonction pour vérifier si une image existe (synchroniquement)
 function imageExisteSync(url) {
-    console.log("probleme")
     const http = new XMLHttpRequest();
     http.open('HEAD', url, false);
     http.send();
     return http.status !== 404;
+}
+
+function afficherImageEnGrand(imageUrl) {
+    const modalImage = document.getElementById('modal-image');
+    modalImage.src = imageUrl; // Définir la source de l'image dans la fenêtre modale
+    modal.style.display = 'block'; // Afficher la fenêtre modale
 }

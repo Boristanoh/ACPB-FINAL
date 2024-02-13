@@ -145,36 +145,42 @@
 .modal {
   display: none; /* Masquer la fenêtre modale par défaut */
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  
   background-color: rgba(0,0,0,0.7); /* Couleur de fond semi-transparente */
 }
 
 .modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  top: 10%;
   margin: auto;
-  width: 80%;
-  max-width: 800px; /* Largeur maximale de la fenêtre modale */
-  max-height: 80%;
-  overflow: auto;
-  background-color: #fff; /* Fond blanc */
+
+  width: 90%; /* Largeur de 80% de la page */
+    height: 80vh; /* 80% de la hauteur de la vue */
+    max-width: 900px; /* Largeur maximale de la fenêtre modale */
+    max-height: 80vh; /* Hauteur maximale de la fenêtre modale */
+    background-color:rgba(0,0,0,0.7); /* Fond blanc */
 }
 
-.close {
+.close__modal {
   position: absolute;
   top: 20px;
   right: 30px;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   color: #aaa;
   cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
+.close__modal:hover,
+.close__modal:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -183,4 +189,7 @@
 .modal-image {
   width: 100%;
   height: auto;
+  
+  max-width: 100%; /* La largeur maximale de l'image est de 100% de la largeur du conteneur */
+    max-height: 100%; /* La hauteur maximale de l'image est de 100% de la hauteur du conteneur */
 }
