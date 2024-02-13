@@ -1,10 +1,27 @@
 const promo = document.querySelectorAll(".promo")
 const h2 = document.querySelector("h2")
 const galerie = document.querySelector(".galerie")
+const lien = document.querySelectorAll("lien-conteneur-image")
 console.log(promo)
 galerie.innerHTML =""
-ajout_photo("promotion 58")
 
+// const modal = document.getElementById('modal');
+// const closeBtn = document.querySelector('.close');
+
+// // Ajoutez un gestionnaire d'événements pour le clic sur le bouton de fermeture
+// closeBtn.addEventListener('click', function() {
+//     modal.style.display = 'none'; // Masquer la fenêtre modale lors du clic sur le bouton de fermeture
+// });
+
+
+ajout_photo("promotion 58")
+lien.forEach((element,index)=>{
+    
+    element.addEventListener("click",(event)=>{
+       event.preventDefault()
+        
+    })
+})
 
 promo.forEach((element,index)=>{
     
@@ -22,34 +39,80 @@ promo.forEach((element,index)=>{
     })
 })
 
-function ajout_photo(chemin){
- for(let i =1;i<=9;i++){
-    let baliseLien = document.createElement("a")
-    let baliseImage = document.createElement("img")
-    let baliseDiv = document.createElement("div")
 
-    try{
-        baliseLien.href =`assets/image/galerie/${chemin.toLowerCase()}/image${i}.jpg`
-        baliseImage.src=`assets/image/galerie/${chemin.toLowerCase()}/image${i}.jpg`
-        console.log("ahhhhhhhhhhhh")
-    }catch(error){
-        baliseLien.href =`assets/image/galerie/${chemin.toLowerCase()}/image${i}.PNG`
-        baliseImage.src=`assets/image/galerie/${chemin.toLowerCase()}/image${i}.PNG`
-        console.log("ehhhhhhhhhhhh")
-    }
-    console.log(`assets/image/galerie/${chemin.toLowerCase()}/image${i}.JPG`)
-    baliseDiv.className = "photo-hover"
-    baliseDiv.textContent="Voir la photo"
-    baliseLien.className="lien-conteneur-image"
-    // fetch(`assets/image/galerie/${chemin.toLowerCase()}/image1.JPG`).then(response => response.json()).then(files=>{
-    //     console.log(files)
-    // } )
 
-    
-    baliseLien.appendChild(baliseImage)
-    baliseLien.appendChild(baliseDiv)
-    galerie.appendChild(baliseLien)
- }
-    
+
+
+function ajout_photo(chemin) {
+    const galerie = document.querySelector(".galerie");
    
+
+    let index = 1;
+    let imageExiste = true;
+
+    while (imageExiste) {
+        let baliseLien = document.createElement("a");
+        let baliseImage = document.createElement("img");
+        let baliseDiv = document.createElement("div");
+
+        let cheminImage;
+        let extension;
+
+        // Vérifier si l'image existe en JPG
+        cheminImage = `assets/image/galerie/${chemin.toLowerCase()}/image${index}.jpg`;
+        extension = "jpg";
+
+        // Si l'image JPG n'existe pas, utiliser l'extension PNG
+        if (!imageExisteSync(cheminImage)) {
+            cheminImage = `assets/image/galerie/${chemin.toLowerCase()}/image${index}.png`;
+            extension = "png";
+        }
+
+        // Vérifier si l'image existe (synchroniquement)
+        imageExiste = imageExisteSync(cheminImage);
+        console.log(imageExiste)
+
+        if (imageExiste) {
+            baliseLien.href = cheminImage;
+            baliseImage.src = cheminImage;
+            
+
+
+
+            baliseDiv.className = "photo-hover";
+            baliseDiv.textContent = "Voir la photo";
+            baliseLien.className = "lien-conteneur-image";
+            baliseLien.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêcher le comportement par défaut de l'élément <a>
+                // Ajouter votre logique pour afficher l'image en grand ici
+              
+            });
+           
+            
+
+            baliseLien.appendChild(baliseImage);
+            baliseLien.appendChild(baliseDiv);
+            galerie.appendChild(baliseLien);
+
+            index++;
+        }
+    }
+    // Modifier l'historique de navigation après l'ajout des images
+    history.pushState(null, null, window.location.pathname);
+
+    // Ajouter l'écouteur d'événements popstate
+    window.addEventListener('popstate', function(event) {
+        event.preventDefault();
+        galerie.innerHTML = "";
+        // Votre logique de retour personnalisée ici
+        console.log("bonjour")
+    });
+}
+
+// Fonction pour vérifier si une image existe (synchroniquement)
+function imageExisteSync(url) {
+    const http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status !== 404;
 }

@@ -137,3 +137,50 @@
   
 
 
+
+
+
+
+  /* Styles pour la fenêtre modale */
+.modal {
+  display: none; /* Masquer la fenêtre modale par défaut */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7); /* Couleur de fond semi-transparente */
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  max-width: 800px; /* Largeur maximale de la fenêtre modale */
+  max-height: 80%;
+  overflow: auto;
+  background-color: #fff; /* Fond blanc */
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+}
