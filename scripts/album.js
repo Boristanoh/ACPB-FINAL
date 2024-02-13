@@ -3,6 +3,7 @@ const h2 = document.querySelector("h2")
 const galerie = document.querySelector(".galerie")
 const lien = document.querySelectorAll("lien-conteneur-image")
 console.log(promo)
+console.log("promo4")
 galerie.innerHTML =""
 
 // const modal = document.getElementById('modal');
@@ -60,17 +61,17 @@ function ajout_photo(chemin) {
 
         // Vérifier si l'image existe en JPG
         cheminImage = `assets/image/galerie/${chemin.toLowerCase()}/image${index}.JPG`;
-        extension = "jpg";
+        extension = "JPG";
 
         // Si l'image JPG n'existe pas, utiliser l'extension PNG
         if (!imageExisteSync(cheminImage)) {
             cheminImage = `assets/image/galerie/${chemin.toLowerCase()}/image${index}.jpg`;
-            extension = "png";
+            extension = "jpg";
         }
 
         // Vérifier si l'image existe (synchroniquement)
         imageExiste = imageExisteSync(cheminImage);
-        console.log(imageExiste)
+       
 
         if (imageExiste) {
             baliseLien.href = cheminImage;
@@ -111,6 +112,7 @@ function ajout_photo(chemin) {
 
 // Fonction pour vérifier si une image existe (synchroniquement)
 function imageExisteSync(url) {
+    console.log("probleme")
     const http = new XMLHttpRequest();
     http.open('HEAD', url, false);
     http.send();
