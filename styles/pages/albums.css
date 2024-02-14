@@ -68,7 +68,7 @@
     background-color: transparent; /* ou background-color: #f5f5f5; (choisissez une couleur similaire à votre arrière-plan) */
 }
 .galerie a {
-  background-color: rgb(50, 50, 50,0.7);
+  background-color: rgb(50, 50, 50,0.4);
 }
 .galerie a img{
   width: 100%; /* Assure que les images occupent toute la largeur du conteneur */
@@ -96,7 +96,7 @@
     justify-content: center;
     font-size: 1.5em;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     display: none;
   }
   
@@ -238,3 +238,130 @@
   transform: translate(-50%, -50%);
   color: black; /* Couleur de l'icône de chargement */
 }
+
+.promo:active{
+  .gallery-loading{
+    animation: animation-chargement 1s ease-in-out 500ms 5 alternate-reverse ;
+  }
+}
+
+@keyframes animation-chargement {
+  to{
+    opacity: 0;
+  }
+  from{ 
+    opacity: 1;
+  }
+  
+}
+
+
+/* loader */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+  .container-visible{
+    display: none;
+  
+}
+
+.load {
+  width: 30vh;
+  height: 22.5vh;
+  
+  display: flex;
+  justify-content: space-evenly;
+}
+.load__bar {
+  background-color: #15DEA5;
+  height: 100%;
+  width: 3vh;
+  animation: bars 1000ms backwards infinite ease-in-out alternate;
+}
+.load__bar--1 {
+  animation-delay: 200ms;
+}
+.load__bar--1-inv {
+  animation-delay: 200ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--2 {
+  animation-delay: 400ms;
+}
+.load__bar--2-inv {
+  animation-delay: 400ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--3 {
+  animation-delay: 600ms;
+}
+.load__bar--3-inv {
+  animation-delay: 600ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--4 {
+  animation-delay: 800ms;
+}
+.load__bar--4-inv {
+  animation-delay: 800ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--5 {
+  animation-delay: 1000ms;
+}
+.load__bar--5-inv {
+  animation-delay: 1000ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes disparait {
+  0% {
+
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes apparait{
+  0% {
+    display: none;
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 1;
+    display: grid;
+  }
+
+}
+
+/* .galerie{
+  animation: apparait 2s 5.5s ease-in-out backwards;
+} */
+
+/*# sourceMappingURL=loader.css.map */

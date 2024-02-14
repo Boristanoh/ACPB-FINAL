@@ -341,6 +341,9 @@ promo.forEach((element, index) => {
             element.classList.add("choix");
             h2.textContent = element.textContent;
             galerie.innerHTML = "";
+            const loader = document.querySelector(".container")
+            loader.classList.remove("container-visible")
+            
             controller = new AbortController(); // Créer un nouveau contrôleur pour la nouvelle requête
             try {
                 await ajout_photo(element.textContent, controller.signal); // Passer le signal d'abandon au chargement des photos
@@ -356,6 +359,7 @@ promo.forEach((element, index) => {
 });
 
 async function ajout_photo(chemin, signal) {
+    
     galerie.innerHTML = "";
     const imagesToPreload = [];
     let index = 1;
@@ -397,6 +401,10 @@ async function ajout_photo(chemin, signal) {
             baliseLien.appendChild(baliseDiv);
             galerie.appendChild(baliseLien);
             index++;
+            if(index ===2){
+                const loader = document.querySelector(".container")
+                loader.classList.add("container-visible")
+            }
         } else {
             break; // Si l'image n'existe pas, sortir de la boucle
         }
