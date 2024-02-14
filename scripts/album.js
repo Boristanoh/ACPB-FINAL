@@ -319,6 +319,7 @@ const galerie = document.querySelector(".galerie");
 const modal = document.getElementById('modal');
 const closeModal = document.querySelector('.close__modal');
 let controller = null; // Contrôleur pour annuler les requêtes asynchrones en cours
+galerie.classList.add("galerie-visible")
 ajout_photo("best of",controller)
 
 // Ajoutez un gestionnaire d'événements pour le clic sur le bouton de fermeture
@@ -341,8 +342,11 @@ promo.forEach((element, index) => {
             element.classList.add("choix");
             h2.textContent = element.textContent;
             galerie.innerHTML = "";
+            galerie.classList.add("galerie-visible")
+           
             const loader = document.querySelector(".container")
             loader.classList.remove("container-visible")
+           
             
             controller = new AbortController(); // Créer un nouveau contrôleur pour la nouvelle requête
             try {
@@ -402,8 +406,12 @@ async function ajout_photo(chemin, signal) {
             galerie.appendChild(baliseLien);
             index++;
             if(index ===2){
-                const loader = document.querySelector(".container")
+               
+                    const loader = document.querySelector(".container")
                 loader.classList.add("container-visible")
+                galerie.classList.remove("galerie-visible")
+               
+ 
             }
         } else {
             break; // Si l'image n'existe pas, sortir de la boucle
