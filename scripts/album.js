@@ -137,6 +137,7 @@ promo.forEach((element, index) => {
 });
 
 async function ajout_photo(chemin) {
+    galerie.innerHTML = "";
     const imagesToPreload = [];
 
     let index = 1;
@@ -189,11 +190,23 @@ async function ajout_photo(chemin) {
             baliseLien.appendChild(baliseImage);
             baliseLien.appendChild(baliseDiv);
             galerie.appendChild(baliseLien);
+            // Ajout de l'événement de chargement à chaque image
+         
+
 
             index++;
         } else {
             break; // Si l'image n'existe pas, sortir de la boucle
         }
+        console.log("avant-loading")
+        window.addEventListener('load', function() {
+            console.log("loding")
+            const firstImage = document.querySelector('.galerie img');
+            firstImage.onload = function() {
+                document.getElementById('gallery-loading').style.display = 'none'; // Masquer le texte de chargement
+                document.querySelector('.galerie').style.backgroundColor = 'red'; // Rétablir la couleur de fond par défaut
+            };
+        });
      
     }
 
@@ -203,6 +216,9 @@ async function ajout_photo(chemin) {
     preloadImages(imagesToPreload);
     // Modifier l'historique de navigation après l'ajout des images
     history.pushState(null, null, window.location.pathname);
+   
+
+
 }
 
 
