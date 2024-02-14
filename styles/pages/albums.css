@@ -193,3 +193,15 @@
   max-width: 100%; /* La largeur maximale de l'image est de 100% de la largeur du conteneur */
     max-height: 100%; /* La hauteur maximale de l'image est de 100% de la hauteur du conteneur */
 }
+
+
+
+
+.loading-icon {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ccc; /* Couleur de l'icône de chargement */
+}

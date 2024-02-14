@@ -172,6 +172,11 @@ async function ajout_photo(chemin) {
             baliseLien.className = "lien-conteneur-image";
             imagesToPreload.push(cheminImage);
 
+            const loadingIcon = document.createElement("div");
+            loadingIcon.className = "loading-icon";
+            loadingIcon.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            baliseLien.appendChild(loadingIcon);
+
             baliseLien.addEventListener('click', function(event) {
                 event.preventDefault(); // Empêcher le comportement par défaut de l'élément <a>
                 // Ajouter votre logique pour afficher l'image en grand ici
@@ -186,6 +191,9 @@ async function ajout_photo(chemin) {
         } else {
             break; // Si l'image n'existe pas, sortir de la boucle
         }
+        baliseImage.addEventListener("load", () => {
+            loadingIcon.style.display = "none";
+        });
     }
 
     // Préchargement sélectif des images
