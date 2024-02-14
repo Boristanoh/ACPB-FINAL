@@ -137,7 +137,9 @@ promo.forEach((element, index) => {
 });
 
 async function ajout_photo(chemin) {
+
     galerie.innerHTML = "";
+    cleanUpImageLoadEvent(); 
     const imagesToPreload = [];
 
     let index = 1;
@@ -198,17 +200,22 @@ async function ajout_photo(chemin) {
         } else {
             break; // Si l'image n'existe pas, sortir de la boucle
         }
-        console.log("avant-loading")
-        window.addEventListener('load', function() {
-            console.log("loding")
+        
+        
+     
+    }
+    console.log("avant-loading")
+    window.addEventListener('load', function() {
+        // Vérifier si la première image n'a pas déjà été chargée pour éviter de déclencher l'événement plusieurs fois
+        if (!firstImageLoaded) {
             const firstImage = document.querySelector('.galerie img');
             firstImage.onload = function() {
                 document.getElementById('gallery-loading').style.display = 'none'; // Masquer le texte de chargement
                 document.querySelector('.galerie').style.backgroundColor = 'red'; // Rétablir la couleur de fond par défaut
+                firstImageLoaded = true; // Marquer la première image comme chargée
             };
-        });
-     
-    }
+        }
+    });
 
    
 
@@ -247,3 +254,9 @@ function preloadImages(images) {
 }
 
 
+function cleanUpImageLoadEvent() {
+    const images = document.querySelectorAll('.galerie img');
+    images.forEach(image => {
+        image.removeEventListener('load', handleImageLoad);
+    });
+}
