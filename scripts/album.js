@@ -286,8 +286,27 @@
 
 
 
-
-
+window.addEventListener('DOMContentLoaded', function() {
+    var promotion = document.querySelector('.promotion');
+  
+    // Fonction pour vérifier et appliquer le style en fonction de la nécessité de défilement horizontal
+    function checkHorizontalScroll() {
+      if (promotion.scrollWidth > promotion.clientWidth) {
+        // Si le défilement horizontal est nécessaire, ajouter une classe pour le style
+        promotion.classList.add('promotion-scrollable');
+      } else {
+        // Sinon, retirer la classe
+        promotion.classList.remove('promotion-scrollable');
+      }
+    }
+  
+    // Appeler la fonction lors du chargement de la page
+    checkHorizontalScroll();
+  
+    // Appeler la fonction lors du redimensionnement de la fenêtre
+    window.addEventListener('resize', checkHorizontalScroll);
+  });
+  
 
 
 
@@ -300,7 +319,7 @@ const galerie = document.querySelector(".galerie");
 const modal = document.getElementById('modal');
 const closeModal = document.querySelector('.close__modal');
 let controller = null; // Contrôleur pour annuler les requêtes asynchrones en cours
-ajout_photo("promotion 58",controller)
+ajout_photo("best of",controller)
 
 // Ajoutez un gestionnaire d'événements pour le clic sur le bouton de fermeture
 closeModal.addEventListener('click', function() {
