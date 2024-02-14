@@ -198,10 +198,10 @@
 
 
 .loading-icon {
-  width: 100px;
   position: absolute;
+  font-size: 30px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ccc; /* Couleur de l'icône de chargement */
+  color: black; /* Couleur de l'icône de chargement */
 }

@@ -176,6 +176,9 @@ async function ajout_photo(chemin) {
             loadingIcon.className = "loading-icon";
             loadingIcon.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
             baliseLien.appendChild(loadingIcon);
+            baliseImage.addEventListener("load", () => {
+                loadingIcon.style.display = "none"; // Cacher l'icône de chargement une fois que l'image est chargée
+            });
 
             baliseLien.addEventListener('click', function(event) {
                 event.preventDefault(); // Empêcher le comportement par défaut de l'élément <a>
@@ -191,17 +194,10 @@ async function ajout_photo(chemin) {
         } else {
             break; // Si l'image n'existe pas, sortir de la boucle
         }
-        baliseImage.addEventListener("load", () => {
-            loadingIcon.style.display = "none";
-        });
+     
     }
 
-    const images = galerie.querySelectorAll("img");
-    images.forEach(image => {
-        image.addEventListener("load", () => {
-            image.nextElementSibling.style.display = "none"; // Cacher l'indicateur de chargement une fois que l'image est chargée
-        });
-    });
+   
 
     // Préchargement sélectif des images
     preloadImages(imagesToPreload);
