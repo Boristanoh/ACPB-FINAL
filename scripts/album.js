@@ -196,6 +196,13 @@ async function ajout_photo(chemin) {
         });
     }
 
+    const images = galerie.querySelectorAll("img");
+    images.forEach(image => {
+        image.addEventListener("load", () => {
+            image.nextElementSibling.style.display = "none"; // Cacher l'indicateur de chargement une fois que l'image est chargée
+        });
+    });
+
     // Préchargement sélectif des images
     preloadImages(imagesToPreload);
     // Modifier l'historique de navigation après l'ajout des images
