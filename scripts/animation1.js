@@ -13,6 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
         checkVisibilityAniamtionhaut(className,"animation-entrer-haut");
       });
     });
+    document.addEventListener("resize", function() {
+      elements.forEach(function(className) {
+        checkVisibilityAniamtionhaut(className,"animation-entrer-haut");
+      });
+    });
   
     // Appeler la fonction pour vérifier la visibilité au chargement du DOM pour chaque classe
     elements.forEach(function(className) {
