@@ -84,9 +84,9 @@
 
 /* FAQs */
 
-svg{
-    height: 50px;
-    width: 50px;
+.svg{
+    height: 40px !important;
+    width: 30px !important;
 }
 
 .faqs__question{
@@ -99,19 +99,27 @@ svg{
 .faqs__question h3{
     font-size: 1.6rem;
     font-weight: bold;
+    max-width: 90%;
     
 }
 @media (max-width: 1024px) {
     .faqs__question h3{
-    font-size: 1.5rem;
-   
-}}
+    font-size: 1.5rem; 
+}
+
+
+
+}
 @media (max-width: 630px) {
     .faqs__question h3{
     font-size: 1rem;
+}
+.svg{
+    height: 30px !important;
+    width: 20px !important;
+}
 
-
-}}
+}
 
 
 .faqs__answer{

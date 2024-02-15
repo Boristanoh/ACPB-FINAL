@@ -25,13 +25,15 @@
     <script>
         function preloadImages() {
             var images = ['assets/image/activites/randonnee/image1.jpg','assets/image/activites/randonnee/image4.jpg', 'assets/image/activites/randonnee/image2.jpeg'];
-            images.forEach(function(image) {
-                var img = new Image();
-                img.src = image;
-            });
+            for (var i = 0; i < images.length; i++) {
+                var img = document.createElement('img');
+                img.src = images[i];
+                console.log(i)
+            }
         }
         window.onload = preloadImages;
     </script>
+    
 </head>
 <body>
     <header>
