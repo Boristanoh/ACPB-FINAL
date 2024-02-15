@@ -66,6 +66,7 @@
     grid-auto-rows: 300px;
     gap: 15px;
     background-color: transparent; /* ou background-color: #f5f5f5; (choisissez une couleur similaire à votre arrière-plan) */
+    animation: apparait 1s ease-in-out 3s backwards;
 }
 .galerie a {
   background-color: rgb(50, 50, 50,0.4);
@@ -264,6 +265,7 @@
   align-items: center;
 
 
+
 }
 
 
@@ -339,9 +341,12 @@
     opacity: 1;
     
   }
+  50%{
+    opacity: 0.5;
+  }
   100% {
+    opacity: 0.3;
     display: none;
-  
   
   }
 }
@@ -361,13 +366,13 @@
 }
 .container-visible{
  
-  animation: disparait 1s ease-in-out 2s both;
+  animation: disparait 1s ease-in-out 2s forwards;
 
 
 }
-.galerie{
+/* .galerie{
   animation: apparait 1s ease-in-out 3s backwards;
-}
+} */
 .galerie-visible{
   display: none;
  

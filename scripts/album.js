@@ -407,7 +407,7 @@ async function ajout_photo(chemin, signal) {
             index++;
             if(index ===2){
                
-                    const loader = document.querySelector(".container")
+                const loader = document.querySelector(".container")
                 loader.classList.add("container-visible")
                 galerie.classList.remove("galerie-visible")
                
