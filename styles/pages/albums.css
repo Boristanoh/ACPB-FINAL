@@ -366,7 +366,7 @@
 }
 .container-visible{
  
-  animation: disparait 1s ease-in-out 2s forwards;
+  animation: disparait 1s ease-in-out 2s both;
 
 
 }
