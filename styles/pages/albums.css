@@ -343,7 +343,11 @@
   50%{
     opacity: 0.5;
   }
+  90%{
+    display: none;
+  }
   100% {
+
     opacity: 0;
     position: absolute;
     top: 50%;
