@@ -66,7 +66,6 @@
     grid-auto-rows: 300px;
     gap: 15px;
     background-color: transparent; /* ou background-color: #f5f5f5; (choisissez une couleur similaire à votre arrière-plan) */
-    animation: apparait 1s ease-in-out 3s backwards;
 }
 .galerie a {
   background-color: rgb(50, 50, 50,0.4);
@@ -370,9 +369,9 @@
 
 
 }
-/* .galerie{
-  animation: apparait 1s ease-in-out 3s backwards;
-} */
+.galerie{
+  animation: apparait 1s ease-in-out 3s forwards;
+}
 .galerie-visible{
   display: none;
  
