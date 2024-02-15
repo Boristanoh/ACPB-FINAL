@@ -6,7 +6,7 @@
     /* background-color: brown; */
     /* background: linear-gradient(to right, rgb(165, 50, 42,0.3), rgb(165, 50, 42,0.05)),
     url("../../assets/image/activites/journee-sportive.jpeg"); */
-    background-image: url("../../assets/image/activites/journee-sportive.jpeg");
+    background-image: url("../../assets/image/activites/akwaba/image4.jpg");
    
     
    
@@ -30,14 +30,12 @@
     flex-direction: column;
     text-align: center;
     gap: 7rem;
-
-    
-
-   
-    animation: scrollBackground 20s ease-in both infinite ;
    
 }
 
+.start-debut{
+  animation: scrollBackground 20s ease-in-out both infinite ;
+}
 .texte{
     font-family: var(--header-font);
     font-style: normal;

@@ -22,19 +22,29 @@
     <link rel="stylesheet" href="styles/pages/randonnee.css">
 
     <script type="module" src="scripts/animation-activite.js" defer></script>
+
     <script>
+       
+       
+        
         console.log("chargement image")
         function preloadImages() {
             var images = ['assets/image/activites/randonnee/image1.jpg','assets/image/activites/randonnee/image4.jpg', 'assets/image/activites/randonnee/image2.jpeg'];
-            for (var i = 0; i < images.length; i++) {
+            for (let i = 0; i < images.length; i++) {
                 var img = document.createElement('img');
                 img.src = images[i];
-                console.log(i)
+                if(i ===images.length -1 ){
+                    const start = document.querySelector(".start")
+                    console.log(start)
+                    start.classList.add("start-debut")
+                }
+               
             }
         }
         console.log("fin du chargement image")
         window.onload = preloadImages;
     </script>
+    
     
 </head>
 <body>
@@ -106,6 +116,8 @@
            
            
         </div>
+
+    
         <section>
         <p>
             Plongez dans l'univers dynamique de l'INP-HB avec notre expérience immersive, la 'Randonnée de Découverte'. Récemment, les étudiants de la classe préparatoire BCPST ont eu l'opportunité exceptionnelle de tracer 

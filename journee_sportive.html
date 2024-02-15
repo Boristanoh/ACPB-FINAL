@@ -24,15 +24,23 @@
 
     <script type="module" src="scripts/animation-activite.js" defer></script>
     <script>
+        console.log("chargement image")
         function preloadImages() {
             var images = ['assets/image/activites/journee-sportive/image3.JPG','assets/image/activites/journee-sportive/image2.JPG', 'assets/image/activites/journee-sportive/image1.JPG'];
-            images.forEach(function(image) {
-                var img = new Image();
-                img.src = image;
-            });
+            for (let i = 0; i < images.length; i++) {
+                var img = document.createElement('img');
+                img.src = images[i];
+                if(i ===images.length -1 ){
+                    const start = document.querySelector(".start")
+                    console.log(start)
+                    start.classList.add("start-debut")
+                }  
+            }
         }
+        console.log("fin du chargement image")
         window.onload = preloadImages;
     </script>
+   
 </head>
 <body>
     <header>

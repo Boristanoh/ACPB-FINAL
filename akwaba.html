@@ -23,15 +23,23 @@
     <link rel="stylesheet" href="styles/pages/akwaba.css">
 
     <script>
-        function preloadImages() {
-            var images = ['assets/image/activites/akwaba/image1.jpg', 'assets/image/activites/akwaba/image2.jpg', 'assets/image/activites/akwaba/image3.jpg', 'assets/image/activites/akwaba/image4.jpg'];
-            images.forEach(function(image) {
-                var img = new Image();
-                img.src = image;
-            });
+       
+    console.log("chargement image")
+    function preloadImages() {
+        var images = ['assets/image/activites/akwaba/image1.jpg', 'assets/image/activites/akwaba/image2.jpg', 'assets/image/activites/akwaba/image3.jpg', 'assets/image/activites/akwaba/image4.jpg'];
+        for (let i = 0; i < images.length; i++) {
+            var img = document.createElement('img');
+            img.src = images[i];
+            if(i ===images.length -1 ){
+                const start = document.querySelector(".start")
+                console.log(start)
+                start.classList.add("start-debut")
+            }  
         }
-        window.onload = preloadImages;
-    </script>
+    }
+    console.log("fin du chargement image")
+    window.onload = preloadImages;
+</script>
 
 
 </head>
