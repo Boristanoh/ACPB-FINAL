@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <script src="scripts/app.js"></script> -->
     <script src="scripts/faqs.js" defer></script>
+    <script type="module" src="scripts/app.js" defer></script>
+    <script type="module" src="scripts/animation1.js"></script>
     <script src="newsletter.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/pages/conseil.css">
@@ -71,7 +73,7 @@
             
         </div>
     </header>
-    <script src="scripts/app.js"></script>
+  
     <main> 
 
         <h1>Conseils des ainés</h1>
@@ -88,19 +90,19 @@
         <section>
             <h2>Catégories de Conseils</h2>
             
-            <p>
+            <p class="animation-individuelle">
                 <b>Gestion du Temps et Organisation :</b>
                 Conseils pratiques pour optimiser votre emploi du temps, gérer les périodes de révision et équilibrer vie étudiante et personnelle. Apprenez à prioriser vos 
                 tâches et à rester concentré sur vos objectifs académiques sans sacrifier votre bien-être.
             </p>
 
-            <p>
+            <p class="animation-individuelle">
                 <b>Choix des écoles aux concours :</b>
                  Guidance sur la sélection des matières en fonction des aspirations professionnelles, avec des retours d'expérience sur des parcours variés. Découvrez comment choisir
                  judicieusement vos parcours scolaire pour construire une base solide pour votre futur professionnel.
             </p>
 
-            <p>
+            <p class="animation-individuelle">
                 <b>Bien-Être Étudiant :</b>
                 Conseils sur la gestion du stress, le maintien d'un équilibre mental et physique, et la construction de bonnes habitudes de vie. Découvrez comment prendre soin de votre bien-être global
                  pour être au meilleur de votre forme académique.
@@ -114,7 +116,7 @@
             <h3>Les Voix de l'Expérience</h3>
 
             <div class="citation">
-                <div class="bloc__citation">
+                <div class="bloc__citation animation-individuelle">
                     <div>
                         <img src="assets/image/president/promotion57.JPG" alt="">
                         <p><b>N'DOMA AGUIÉ CÉDRIC</b> <br>ACPB 2021-2023<br><a href="https://www.linkedin.com/in/agui%C3%A9-ange-c%C3%A9dric-junior-n-doma-b3b691178?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Connectez-vous avec AGUIE</a></p>
@@ -124,7 +126,7 @@
                     
                 </div>
     
-                <div class="bloc__citation">
+                <div class="bloc__citation animation-individuelle">
                     <div>
                         <img src="assets/image/president/promotion57.JPG" alt="">
                         <p><b>TEHUA TANOH BORIS</b> <br>ACPB 2021-2023 <br><a href="https://boristanoh.github.io/site-personnel-/">Connectez-vous avec BORIS</a></p>
@@ -134,7 +136,7 @@
                     
                 </div>
 
-                <div class="bloc__citation">
+                <div class="bloc__citation animation-individuelle">
                     <div>
                         <img src="assets/image/president/promotion57.JPG" alt="">
                         <p><b>TEHUA TANOH BORIS</b> <br>ACPB 2021-2023 <br><a href="https://boristanoh.github.io/site-personnel-/">Connectez-vous avec BORIS</a></p>
@@ -155,7 +157,7 @@
         <section class="sectionfaqs" id="faqs">
             <h2 class="faqs__title">FAQs</h2>
 
-            <div class="faqs">
+            <div class="faqs animation-individuelle">
                 <div class="faqs__question">
                     <h3>Qu'est-ce que l'ACPB et quel est son objectif ?</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
@@ -168,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="faqs">
+            <div class="faqs animation-individuelle">
                 <div class="faqs__question">
                     <h3>Comment puis-je devenir membre de l'ACPB ?</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
@@ -181,7 +183,7 @@
                 </div>
             </div>
 
-            <div class="faqs">
+            <div class="faqs animation-individuelle">
                 <div class="faqs__question">
                     <h3>Quels sont les avantages d'être membre de l'ACPB ?</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
@@ -194,7 +196,7 @@
                 </div>
             </div>
 
-            <div class="faqs" >
+            <div class="faqs animation-individuelle" >
                 <div class="faqs__question">
                     <h3>Comment puis-je proposer une idée d'événement ou d'activité à l'ACPB ?</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
@@ -206,7 +208,7 @@
                 </div>
             </div>
 
-            <div class="faqs">
+            <div class="faqs animation-individuelle">
                 <div class="faqs__question">
                     <h3>Comment puis-je contacter l'ACPB pour poser des questions ou obtenir des informations supplémentaires ?</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
@@ -231,7 +233,7 @@
                 Ensemble, construisons votre parcours académique et professionnel avec confiance.
             </p>
 
-            <div class="contact__formulaire">
+            <div class="contact__formulaire animation-individuelle">
                 <form class="formulaire">
                     <input type="text" id="nom" placeholder="Nom" required>
                 

@@ -127,15 +127,15 @@
 
 @keyframes scrollBackground {
     0% {
-        background-image: url("../../assets/image/activites/akwaba/image2.jpg");
+        background-image: url("../../assets/image/activites/akwaba/image1.jpg");
         
     }
     30% {
-        background-image: url("../../assets/image/activites/akwaba/image3.jpg");
+        background-image: url("../../assets/image/activites/akwaba/image2.jpg");
      
     }
     60% {
-        background-image: url("../../assets/image/activites/akwaba/image5.jpg");
+        background-image: url("../../assets/image/activites/akwaba/image3.jpg");
         
     }
     80% {
@@ -143,8 +143,14 @@
         
     }
     100% {
-        background-image: url("../../assets/image/activites/akwaba/image2.jpg");
+        background-image: url("../../assets/image/activites/akwaba/image1.jpg");
         
     }
     
   }
+
+  section{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-out, 500ms ease-in-out;
+}

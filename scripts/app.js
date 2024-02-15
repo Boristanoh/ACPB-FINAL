@@ -1,3 +1,4 @@
+import { checkVisibilityAniamtionhaut,checkVisibility} from "./checkVisibility.js";
 var sidenav = document.querySelector(".navbarlink")
 var openBtn = document.getElementById("openBtn");
 var closeBtn = document.getElementById("closeBtn");
@@ -74,41 +75,41 @@ document.addEventListener("DOMContentLoaded", function() {
   // Écouter l'événement de scroll et appeler la fonction pour chaque classe
   document.addEventListener("scroll", function() {
     newsletter.forEach(function(className) {
-      checkVisibility(className,"animation-entrer-bas");
+      checkVisibility(className,"animation-entrer-bas",1);
     });
   });
 
   // Appeler la fonction pour vérifier la visibilité au chargement du DOM pour chaque classe
   newsletter.forEach(function(className) {
-    checkVisibility(className,"animation-entrer-bas");
+    checkVisibility(className,"animation-entrer-bas",1);
   });
 });
 
-// Fonction pour vérifier la visibilité pour une classe donnée
-function checkVisibility(className,animation) {
-//   var element = document.querySelector(className);
-  var isVisible = false; // Booléen pour suivre si l'élément est déjà visible
+// // Fonction pour vérifier la visibilité pour une classe donnée
+// function checkVisibility(className,animation) {
+// //   var element = document.querySelector(className);
+//   var isVisible = false; // Booléen pour suivre si l'élément est déjà visible
   
 
-  // Vérifier si l'élément est potentiellement visible
-  if (!isVisible) {
-    var position = className.getBoundingClientRect().top;
-    var screenHeight = window.innerHeight;
-    if (position < screenHeight * 1) {
-        // className.classList.remove(".animation-sortir-droit")
-      className.classList.add(animation);
-      console.log(1,className)
-      isVisible = true; // Marquer l'élément comme visible
-    }
-    else{
-        className.classList.remove(animation);
-        // className.classList.add(".animation-sortir-droit")
-        isVisible = false;
+//   // Vérifier si l'élément est potentiellement visible
+//   if (!isVisible) {
+//     var position = className.getBoundingClientRect().top;
+//     var screenHeight = window.innerHeight;
+//     if (position < screenHeight * 1) {
+//         // className.classList.remove(".animation-sortir-droit")
+//       className.classList.add(animation);
+//       console.log(1,className)
+//       isVisible = true; // Marquer l'élément comme visible
+//     }
+//     else{
+//         className.classList.remove(animation);
+//         // className.classList.add(".animation-sortir-droit")
+//         isVisible = false;
         
-    }
-  }
+//     }
+//   }
 
-}
+// }
 
 
 
@@ -158,33 +159,3 @@ document.addEventListener("DOMContentLoaded", function() {
     checkVisibilityAniamtionhaut(className,"animation-entrer-haut");
   });
 });
-
-
-
-// Fonction pour vérifier la visibilité pour une classe donnée
-function checkVisibilityAniamtionhaut(className,animation) {
-//   var element = document.querySelector(className);
-  
-  
-
-  // Vérifier si l'élément est potentiellement visible
- 
-    var position = className.getBoundingClientRect();
-    var screenHeight = window.innerHeight;
-    if (position.top < screenHeight * 0.95 ) {
-
-      if(!className.classList.contains(animation)){
-        
-      className.classList.add(animation);
-      console.log(className)
-  
-    }
-    }
-    else{
-        className.classList.remove(animation);
-    }
-
-}
-
-
-

@@ -94,7 +94,7 @@ section{
 }
 
 .animation-entrer-gauche{
-    animation: animation-entrer-gauche 700ms ease-in-out 100ms backwards alternate-reverse;
+    animation: animation-entrer-gauche 700ms ease-in-out 100ms backwards ;
 }
 
 @keyframes animation-entrer-droit {

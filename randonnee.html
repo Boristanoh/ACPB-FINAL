@@ -13,12 +13,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <script src="scripts/animation.js" defer></script>
-    <script src="scripts/app.js" defer></script>
+    <script type="module" src="scripts/animation.js" defer></script>
+    <script type="module" src="scripts/app.js" defer></script>
     <script src="scripts/slider.js" defer></script>
+    <script type="module" src="scripts/animation1.js" defer></script>
     <script src="scripts/newsletter.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/pages/randonnee.css">
+
+    <script type="module" src="scripts/animation-activite.js" defer></script>
+    <script>
+        function preloadImages() {
+            var images = ['assets/image/activites/randonnee/image1.jpg','assets/image/activites/randonnee/image4.jpg', 'assets/image/activites/randonnee/image2.jpeg'];
+            images.forEach(function(image) {
+                var img = new Image();
+                img.src = image;
+            });
+        }
+        window.onload = preloadImages;
+    </script>
 </head>
 <body>
     <header>
@@ -96,47 +109,47 @@
             étudiants un aperçu exclusif des ressources qui façonneront leur parcours académique. Suivez-nous alors que nous relivrons cette aventure enrichissante, une expérience qui transcende les limites de la salle de classe pour 
             ouvrir de nouvelles perspectives sur l'apprentissage, la collaboration et la passion pour les sciences
         </p>
-        <h2>Galérie visuelle</h2>
-        <p>
+        <h2 class="animation-individuelle">Galérie visuelle</h2>
+        <p class="animation-individuelle">
             Explorez notre galerie visuelle pour plonger dans l'atmosphère vibrante des éditions précédentes : des sourires radieux, des exploits sportifs mémorables et une énergie électrisante qui défie les mots.
         </p>
          </section >
 
          <section class="galerie">
-            <a href="assets/image/galerie/year2024/image1.JPG" class="lien-conteneur-image">
-                <img src="assets/image/galerie/year2024/image1.JPG" alt="">
+            <a href="assets/image/activites/randonnee/galerie/image1.JPG" class="lien-conteneur-image">
+                <img src="assets/image/activites/randonnee/galerie/image1.JPG"  alt="">
                 <div class="photo-hover">Voir la photo</div>
             </a>
-            <a href="assets/image/galerie/year2024/image2.JPG" class="lien-conteneur-image">
-                <img src="assets/image/galerie/year2024/image2.JPG" alt="">
+            <a href="assets/image/activites/randonnee/image2.jpeg" class="lien-conteneur-image">
+                <img src="assets/image/activites/randonnee/image2.jpeg" alt="">
                 <div class="photo-hover">Voir la photo</div>
             </a>
-            <a href="assets/image/galerie/year2024/image3.PNG" class="lien-conteneur-image">
-                <img src="assets/image/galerie/year2024/image3.PNG" alt="">
+            <a href="assets/image/activites/randonnee/galerie/image3.jpg"  class="lien-conteneur-image">
+                <img src="assets/image/activites/randonnee/galerie/image3.jpg"  alt="">
                 <div class="photo-hover">Voir la photo</div>
             </a>
-            <a href="assets/image/galerie/year2024/image4.PNG" class="lien-conteneur-image">
-                <img src="assets/image/galerie/year2024/image4.PNG" alt="">
+            <a href="assets/image/activites/randonnee/galerie/image4.jpg" class="lien-conteneur-image">
+                <img src="assets/image/activites/randonnee/galerie/image4.jpg"  alt="">
                 <div class="photo-hover">Voir la photo</div>
             </a>
-            <a href="assets/image/galerie/year2024/image5.PNG" class="lien-conteneur-image">
-                <img src="assets/image/galerie/year2024/image5.PNG" alt="">
+            <a href="assets/image/activites/randonnee/galerie/image5.jpg"  class="lien-conteneur-image">
+                <img src="assets/image/activites/randonnee/galerie/image5.jpg"  alt="">
                 <div class="photo-hover">Voir la photo</div>
             </a>
-            <a href="assets/image/galerie/year2024/image6.PNG" class="lien-conteneur-image">
-                <img src="assets/image/galerie/year2024/image6.PNG" alt="">
+            <a href="assets/image/activites/randonnee/galerie/image6.jpg" class="lien-conteneur-image">
+                <img src="assets/image/activites/randonnee/galerie/image6.jpg"  alt="">
                 <div class="photo-hover">Voir la photo</div>
             </a>
-            <a href="assets/image/galerie/year2024/image7.JPG" class="lien-conteneur-image">
-                <img src="assets/image/galerie/year2024/image7.JPG" alt="">
+            <a href="assets/image/activites/randonnee/galerie/image7.JPG"  class="lien-conteneur-image">
+                <img src="assets/image/activites/randonnee/galerie/image7.JPG"  alt="">
                 <div class="photo-hover">Voir la photo</div>
             </a>
-            <a href="assets/image/galerie/year2024/image8.JPG" class="lien-conteneur-image">
-                <img src="assets/image/galerie/year2024/image8.JPG" alt="">
+            <a href="assets/image/activites/randonnee/galerie/image8.JPG"  class="lien-conteneur-image">
+                <img src="assets/image/activites/randonnee/galerie/image8.JPG"  alt="">
                 <div class="photo-hover">Voir la photo</div>
             </a>
-            <a href="assets/image/galerie/year2024/image9.JPG" class="lien-conteneur-image">
-                <img src="assets/image/galerie/year2024/image9.JPG" alt="">
+            <a href="assets/image/activites/randonnee/galerie/image9.JPG"  class="lien-conteneur-image">
+                <img src="assets/image/activites/randonnee/galerie/image9.JPG" alt="">
                 <div class="photo-hover">Voir la photo</div>
             </a>
 <!--             

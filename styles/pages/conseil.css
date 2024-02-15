@@ -97,7 +97,7 @@ svg{
 }
 
 .faqs__question h3{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: bold;
     
 }
@@ -154,5 +154,11 @@ svg{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+section{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-out, 500ms ease-in-out;
 }
 
