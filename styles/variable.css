@@ -182,33 +182,3 @@ h2::before {
     border-left: 0.4rem var(--light-blue) solid;
     transform: translateY(-0.5rem);
   }
-
- 
-
-
-  .animation-individuelle{
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.5s ease-out, 500ms ease-in-out;
-}
-
-.animation-entrer-haut,.animation-individuelle.animation-entrer-haut{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-
-
-.no-scroll{
-  overflow: hidden;
-}
-
-
-
-
-
-
-
-
-

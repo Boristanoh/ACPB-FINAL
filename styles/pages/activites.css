@@ -51,10 +51,10 @@ section{
     margin-bottom: 6rem;
     
 }
-.sectionAkwaba,.sectionCarriere{
+/* .sectionAkwaba,.sectionCarriere{
   position: relative;
   top: 6rem;
-}
+} */
 
 @keyframes bouge {
     0% {
@@ -80,6 +80,17 @@ section{
     }
 }
 
+@media screen and (max-width: 350px) {
+    .image__activite{
+     
+        width: 15rem;
+        height: 15rem;
+   
+    }
+}
+
+
+
 /* .sectionAkwaba{
   margin-top: 10rem;
 } */
@@ -94,7 +105,7 @@ section{
 }
 
 .animation-entrer-gauche{
-    animation: animation-entrer-gauche 700ms ease-in-out 100ms backwards ;
+    animation: animation-entrer-gauche 700ms  cubic-bezier(0.075, 0.82, 0.165, 1) 100ms both ;
 }
 
 @keyframes animation-entrer-droit {

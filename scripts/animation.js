@@ -13,10 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
   // Écouter l'événement de scroll et appeler la fonction pour chaque classe
   document.addEventListener("scroll", function() {
     classesToCheck.forEach(function(className,index) {
+      
       if(index%2===0){
-        checkVisibility(className,"animation-entrer-droit",0.95);
+        
+        checkVisibility(className,"animation-entrer-droit",1);
       }else{
-        checkVisibility(className,"animation-entrer-gauche",0.95);
+        checkVisibility(className,"animation-entrer-gauche",1);
       }
     });
   });
@@ -24,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Appeler la fonction pour vérifier la visibilité au chargement du DOM pour chaque classe
   classesToCheck.forEach(function(className,index) {
     if(index%2===0){
+      
       checkVisibility(className,"animation-entrer-droit",0.95);
     }else{
       checkVisibility(className,"animation-entrer-gauche",0.95);

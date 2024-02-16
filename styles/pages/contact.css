@@ -1,5 +1,5 @@
 @import '../variable.css';
-
+@import '../modules/formulaire.css';
 
 #map{
     height: 30rem;
@@ -16,67 +16,16 @@
     
 }
 
-.formulaire{
-    padding: 1rem 1rem 1rem 1rem;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: white;
+.infocontact__information__bloc{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.918), rgba(206, 221, 255, 0.733));
     display: flex;
     flex-direction: column;
-    gap:1.5rem;
-    width: 80%;
-    
-    /* animation: entrer-gauche 1s 500ms cubic-bezier(0.075, 0.82, 0.165, 1) both; */
-}
-.formulaire input,.formulaire textarea{
-        
-        font-size: 1.2rem;
-        padding: 0.8rem;
-        width: 90%;
-        border-bottom: 0.15rem solid black
-        
-}
-.required{
-    color: red;
-    margin-left: 5px;
-}
-
-    
-        /* &:focus{
-            outline: none;
-            border-width: 0.1rem 0.1rem 0.15rem 0.1rem;
-            border-style: solid;
-            border-color: black;
-         */
-    
-
- form  button{
-        
-        width: 10rem;
-        height: 2rem;
-        background-color: var(--light-blue);
-        border-color: var(--light-blue);
-        color:white;
-        border-radius: 15px;
-        /* transition: transform 450ms ease-in-out, background-color 300ms 150ms ease-in-out; */
-       
-    }
-    form div{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-.infocontact__information__bloc{
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.918), rgba(206, 221, 255, 0.733));
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 20rem;
-        height: 7rem;
-        gap: 0.5rem;
-        box-shadow: 0rem 0rem 0.5rem black;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 7rem;
+    gap: 0.5rem;
+    box-shadow: 0rem 0rem 0.5rem black;
          
     }
 .contact{
@@ -86,10 +35,10 @@
     flex-wrap: wrap ;
 }
     
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     
     
-}
+} */
 
 
 @media screen and (max-width: 1024px){
@@ -102,64 +51,4 @@
             width: 80%;
     }
 
-}
-
-
-
-
-
-
-/**
-  * Gestion des popups
-  */
-
-  .popupBackground {
-    display: none;
-    position: fixed;
-   
-    top:0;
-    left: 0;
-    height: 100%;
-    width: 100%; 
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-    color: black;
-    font-size: 17px;
-    font-weight: 500;
-    background-color:  rgba(206, 221, 255);
-    border-radius: 30px;
-    z-index: 1;
-}
-
-
-
-.active {
-    display: flex !important;
-}
-
-.popup p {
-    width: 100%;
-    margin-bottom: 20px;
-}
-#btnok{
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: white;
-}
-.popup div {
-    font-size: 25px;
-    padding : 5px;
-    padding-bottom: 15px;
 }

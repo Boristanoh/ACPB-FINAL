@@ -9,18 +9,6 @@
     opacity: 0;
     transform: translateY(100px);
     transition: opacity 0.5s ease-out, 500ms ease-in-out;
-
-    /* background: linear-gradient(to top, rgba(255, 255, 255, 0.918), rgba(228, 229, 233, 0.733)); */
-   
-    
-   
-    /* border-radius: 31% 69% 55% 45% / 43% 40% 60% 57% ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: min-content;
-    height: min-content; */
 }
 
 
@@ -42,14 +30,6 @@ p{
     opacity: 0.5;
 }
 
-@media (max-width: 420px) {
-    .logos img{
-        height: 60px;
-        width: 60px;
-     }
-}
-
-
 .concoursInternes > div.animation-entrer-haut{
     opacity: 1;
     transform: translateY(0);
@@ -66,4 +46,11 @@ h2{
 h2.animation-entrer-haut{
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 420px) {
+    .logos img{
+        height: 60px;
+        width: 60px;
+     }
 }
