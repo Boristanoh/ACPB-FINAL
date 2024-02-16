@@ -25,6 +25,9 @@ section{
 .boutton-haut{
     background-color: white;
     border-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0rem 0rem 0.5rem black;
     position: absolute;
     top: 90%;
@@ -36,6 +39,7 @@ section{
     border-radius: 50%;
     text-align: center;
     outline: none;
+    font-size: 2rem;
     opacity: 0;
     color: aqua;
     transform: translateY(50px);
@@ -43,6 +47,7 @@ section{
     
 
 }
+
 
 .boutton-haut-visible{
     opacity: 1;
