@@ -78,35 +78,35 @@ function sendEmail() {
       alert('Veuillez remplir tous les champs du formulaire.');
       return; // Ne continuez pas avec l'envoi si la validation échoue
   }else{
-    afficherPopup()
+    
 
 
-//   // Définissez les placeholders dynamiquement
-//   var templateParams = {
-//     to_email: email,
-//     email_subject: objet,
-//     email_message: message,
-//     user_name : name
-//   };
+  // Définissez les placeholders dynamiquement
+  var templateParams = {
+    to_email: email,
+    email_subject: objet,
+    email_message: message,
+    user_name : name
+  };
 
-//   // Envoyez l'e-mail en utilisant Email.js
-//   emailjs.send('service_yp60a38', 'template_wcoq11s', templateParams)
-//     .then(function(response) {
-//       document.getElementById('success-message').textContent = 'E-mail envoyé avec succès!';
-//       console.log('E-mail envoyé avec succès :', response);
+  // Envoyez l'e-mail en utilisant Email.js
+  emailjs.send('service_aklc7xh', 'template_3f8dxto', templateParams)
+    .then(function(response) {
+        afficherPopup()
+      console.log('E-mail envoyé avec succès :', response);
       
-//       // Réinitialisez les champs du formulaire
-//       document.getElementById('email').value = '';
-//       document.getElementById('objet').value = '';
-//       document.getElementById('message').value = '';
-//       document.getElementById('nom').value = '';
-//     }, function(error) {
-//       console.log('Erreur lors de l\'envoi de l\'e-mail :', error);
-//       document.getElementById('error-message').textContent = 'Erreur lors de l\'envoi de l\'e-mail.';
-//     });
+      // Réinitialisez les champs du formulaire
+      document.getElementById('email').value = '';
+      document.getElementById('objet').value = '';
+      document.getElementById('message').value = '';
+      document.getElementById('nom').value = '';
+    }, function(error) {
+      console.log('Erreur lors de l\'envoi de l\'e-mail :', error);
+      document.getElementById('error-message').textContent = 'Erreur lors de l\'envoi de l\'e-mail.';
+    });
   }
   
 }
 // Initialisez Email.js avec votre User ID
-// emailjs.init("4CozbeJ5-m9fZVi9t");
+emailjs.init("ebo48V2ej9i53Mrb7");
 initAddEventListenerPopup()
