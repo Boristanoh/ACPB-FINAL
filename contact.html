@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenu(e) sur le site officiel de l'ACPB</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/acpb.png">
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
@@ -14,12 +13,14 @@
     <!-- <script src="app.js"></script> -->
     <script src="newsletter.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/pages/contact.css">
-
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
     <script src="scripts/popup.js" defer></script>
+    <script type="module" src="scripts/animation1.js" defer></script>
 </head>
 <body>
     <header>
@@ -80,10 +81,10 @@
         <div class="boutton-haut" id="myBtn" > <i class="fa-solid fa-up-long"></i></div>
 
         <section>
-            <h2> Discutons ensemble</h2>
-            <p>Vous n'aimez pas les formulaires? Envoyez moi nous un <a href="mailto:acpb.inphb@gamil.com?" class="cta"> email</a>👍</p>
+            <h2 class="animation-individuelle"> Discutons ensemble</h2>
+            <p class="animation-individuelle">Vous n'aimez pas les formulaires? Envoyez moi nous un <a href="mailto:acpb.inphb@gamil.com?" class="cta"> email</a>👍</p>
             
-            <div class="bloc__contact">
+            <div class="bloc__contact animation-individuelle">
                 <div class="contact__formulaire">
                     <form class="formulaire" method="get">
                         <div>
@@ -119,8 +120,8 @@
 
 
          <section>
-            <h2>Contact</h2>
-            <div class="contact">
+            <h2 class="animation-individuelle">Contact</h2>
+            <div class="contact animation-individuelle">
 
                 <div class="infocontact__information__bloc">
                     <h3> <i class="fa-solid fa-envelope icone"></i>&nbsp;&nbsp;&nbsp;Email</h3>
@@ -143,8 +144,8 @@
             
             <section>
 
-                <h2>Localisation</h2>
-                <div id="map"></div>
+                <h2 class="animation-individuelle">Localisation</h2>
+                <div id="map" class="animation-individuelle"></div>
             </section>
             
 
