@@ -37,6 +37,7 @@ section{
     text-align: center;
     outline: none;
     opacity: 0;
+    color: aqua;
     transform: translateY(50px);
     transition: opacity 0.5s ease-out, 500ms ease-in-out;
     

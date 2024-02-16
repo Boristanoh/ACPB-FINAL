@@ -343,11 +343,11 @@
   50%{
     opacity: 0.5;
   }
- 
   100% {
-
     opacity: 0;
-    display: none;
+    position: fixed;
+   
+    /* display: none; */
  
     
     /* display: none; */
