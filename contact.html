@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+    <script src="scripts/popup.js" defer></script>
 </head>
 <body>
     <header>
@@ -76,6 +78,7 @@
     <script type="module" src="scripts/app.js"></script>
     <main> 
         <h1>Contact</h1>
+        <div class="boutton-haut" id="myBtn" >|</div>
 
         <section>
             <h2> Discutons ensemble</h2>
@@ -83,36 +86,59 @@
             
             <div class="bloc__contact">
                 <div class="contact__formulaire">
-                    <form class="formulaire">
-                        <input type="text" id="nom" placeholder="Nom" required>
-                    
-                        <input type="email" id="email" placeholder="Email" required>
-                        
-                        <input type="text" id="objet" placeholder="Object" required>
-                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
-                        <button type="button" onclick="sendEmail()">Envoyer le message</button>
+                    <form class="formulaire" method="get">
+                        <div>
+                            <label for="nom" required><p><b>Nom<span class="required">*</span></b></p></label>
+                            <input type="text" id="nom" name="nom" placeholder="Enter your Name" required>
+                        </div>
+
+                        <div>
+                            <label for="email"><p><b>Email<span class="required">*</span></b></p></label>
+                            <input type="email" id="email" placeholder="Enter a valid email adress" required>
+                        </div>
+
+                        <div>
+                            <label for="objet" required><p><b>Objet<span class="required">*</span></b></p></label>
+                            <input type="text" id="objet" placeholder="Objet of message" required>
+
+                        </div>
+                        <div>
+                            <label for="message" required><p><b>Message<span class="required">*</span></b></p></label>
+                            <textarea name="message" id="message" placeholder="Enter your message" cols="30" rows="10"></textarea>
+                        </div>
+
+
+      
+                        <button type="button" class="boutton-envoyer">Envoyer le message</button>
                         
                     </form>
                 </div>
 
-                <div class="contact">
+                
+            </div>
+        </section>
 
-                        <div class="infocontact__information__bloc">
-                            <h3> <i class="fa-solid fa-envelope icone"></i>&nbsp;&nbsp;&nbsp;Email</h3>
-                        <p>acpb_inphb@gmail.com</p>
-                    </div>
 
-                        <div class="infocontact__information__bloc">
-                            <h3><i class="fa-solid fa-location-dot icone"></i>&nbsp;&nbsp;&nbsp;Adresse</h3>
-                                <p>INPHB Yamoussoukro</p>
-                        </div>
+         <section>
+            <h2>Contact</h2>
+            <div class="contact">
 
-                        <div class="infocontact__information__bloc">
-                            <h3><i class="fa-solid fa-location-dot icone"></i>&nbsp;&nbsp;&nbsp;Adresse</h3>
-                                <p>www.acpb.com</p>
-                        </div>
+                <div class="infocontact__information__bloc">
+                    <h3> <i class="fa-solid fa-envelope icone"></i>&nbsp;&nbsp;&nbsp;Email</h3>
+                    <p>acpb_inphb@gmail.com</p>
+                </div>
+
+                <div class="infocontact__information__bloc">
+                        <h3><i class="fa-solid fa-location-dot icone"></i>&nbsp;&nbsp;&nbsp;Adresse</h3>
+                        <p>INPHB Yamoussoukro</p>
+                </div>
+
+                <div class="infocontact__information__bloc">
+                        <h3><i class="fa-solid fa-location-dot icone"></i>&nbsp;&nbsp;&nbsp;Service en ligne</h3>
+                        <p>www.acpb.com</p>
                 </div>
             </div>
+         </section>
 
 
             
@@ -140,16 +166,8 @@
           </script>
         
 
-        </section>
-
-        
-
+       
       
-
-            
-            
-            
-           
     </main>
     
     
@@ -221,6 +239,16 @@
             Copyright © Janvier 2024 ACPB Tous droits réservés.| Designed and coded by <a href="https://boristanoh.github.io/site-personnel-/" target="_blank"> TEHUA BORIS</a>
         </div>
     </footer>
+          <!-- Popup de partage -->
+        <div class="popupBackground">
+            <div class="popup">
+                <div>Votre message a bien été envoyé. <br></div>
+                
+                <button id="btnok">ok</button>
+                
+            </div>
+        </div>
+
  
 </body>
 </html>

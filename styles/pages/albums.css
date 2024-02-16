@@ -343,15 +343,12 @@
   50%{
     opacity: 0.5;
   }
-  90%{
-    display: none;
-  }
+ 
   100% {
 
     opacity: 0;
-    position: absolute;
-    top: 50%;
-    z-index: -1;
+    display: none;
+ 
     
     /* display: none; */
   
@@ -373,12 +370,12 @@
 }
 .container-visible{
  
-  animation: disparait 1s ease-in-out 2s both;
+  animation: disparait 1s ease-in-out 2.2s forwards;
 
 
 }
-.galerie{
-  animation: apparait 1s ease-in-out 3s forwards;
+.galerie-apparait{
+  animation: apparait 1s ease-in-out 3s both;
 }
 .galerie-visible{
   display: none;

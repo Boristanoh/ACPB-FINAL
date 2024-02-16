@@ -19,3 +19,32 @@ img{
 section{
     padding: 2rem 1rem 2rem 1rem;
 }
+
+
+
+.boutton-haut{
+    background-color: white;
+    border-color: white;
+    box-shadow: 0rem 0rem 0.5rem black;
+    position: absolute;
+    top: 90%;
+    right: 1rem;
+    position: fixed;
+    z-index: 2;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    outline: none;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, 500ms ease-in-out;
+    
+
+}
+
+.boutton-haut-visible{
+    opacity: 1;
+    transform: translateY(0);
+   
+}

@@ -159,3 +159,33 @@ document.addEventListener("DOMContentLoaded", function() {
     checkVisibilityAniamtionhaut(className,"animation-entrer-haut");
   });
 });
+
+
+
+document.addEventListener("scroll", function() {
+  // Liste des classes à traiter
+  var body = document.querySelector("body")
+  var position = body.getBoundingClientRect();
+   var screenHeight = window.innerHeight;
+    let position_page = -position.top
+    // console.log(position_page)
+    if(position_page>600){
+      let boutton = document.querySelector(".boutton-haut")
+      boutton.classList.add("boutton-haut-visible")
+     
+    }
+    else{
+      let boutton = document.querySelector(".boutton-haut")
+      boutton.classList.remove("boutton-haut-visible")
+      
+    }
+})
+
+let boutton = document.querySelector(".boutton-haut")
+boutton.addEventListener("click",function (){
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  })
+})
+

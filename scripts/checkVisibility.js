@@ -40,7 +40,7 @@ export function checkVisibility(className,animation,nombre) {
           if(!className.classList.contains(animation)){
             
           className.classList.add(animation);
-          console.log(className)
+          // console.log(className)
       
         }
         }

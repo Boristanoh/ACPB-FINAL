@@ -319,6 +319,7 @@ const galerie = document.querySelector(".galerie");
 const modal = document.getElementById('modal');
 const closeModal = document.querySelector('.close__modal');
 let controller = null; // Contrôleur pour annuler les requêtes asynchrones en cours
+galerie.classList.remove("galerie-apparait")
 galerie.classList.add("galerie-visible")
 ajout_photo("best of",controller)
 
@@ -343,6 +344,7 @@ promo.forEach((element, index) => {
             h2.textContent = element.textContent;
             galerie.innerHTML = "";
             galerie.classList.add("galerie-visible")
+            galerie.classList.remove("galerie-apparait")
            
             const loader = document.querySelector(".container")
             loader.classList.remove("container-visible")
@@ -410,6 +412,7 @@ async function ajout_photo(chemin, signal) {
                 const loader = document.querySelector(".container")
                 loader.classList.add("container-visible")
                 galerie.classList.remove("galerie-visible")
+                galerie.classList.add("galerie-apparait")
                
  
             }

@@ -196,3 +196,19 @@ h2::before {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+
+.no-scroll{
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
