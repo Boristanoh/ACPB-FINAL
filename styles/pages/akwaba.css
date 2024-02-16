@@ -61,7 +61,7 @@
 .galerie {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 300px;
     gap: 15px;
   }
 
@@ -100,21 +100,14 @@
     /* background-color: brown; */
     align-items: center;
     justify-content: center;
-   
-    
-
   }
  
   .galerie img{
-    
-
     height: 50%;
-    
     /* object-fit: cover; */
   }
   .lien-conteneur-image {
     position: relative;
-    
     height: 50%;
     /* background-color: blueviolet; */
   }
