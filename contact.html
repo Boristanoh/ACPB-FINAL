@@ -78,15 +78,16 @@
     <script type="module" src="scripts/app.js"></script>
     <main> 
         <h1>Contact</h1>
-        <div class="boutton-haut" id="myBtn" > <i class="fa-solid fa-up-long"></i></div>
+        <!-- <i class="fa-solid fa-up-long"></i> -->
+        <div class="boutton-haut" id="myBtn" > <i class="fa-solid fa-arrow-up"></i></div>
 
         <section>
             <h2 class="animation-individuelle"> Discutons ensemble</h2>
-            <p class="animation-individuelle">Vous n'aimez pas les formulaires? Envoyez moi nous un <a href="mailto:acpb.inphb@gamil.com?" class="cta"> email</a>👍</p>
+            <p class="animation-individuelle">Vous n'aimez pas les formulaires? Envoyez nous un <a href="mailto:acpb.inphb@gamil.com?" class="cta"> email</a>👍</p>
             
             <div class="bloc__contact animation-individuelle">
                 <div class="contact__formulaire">
-                    <form class="formulaire" method="get">
+                    <form  id="formulaire" class="formulaire" method="get">
                         <div>
                             <label for="nom" required><p><b>Nom<span class="required">*</span></b></p></label>
                             <input type="text" id="nom" name="nom" placeholder="Enter your Name" required>
@@ -108,8 +109,10 @@
                         </div>
 
 
-      
-                        <button type="button" class="boutton-envoyer">Envoyer le message</button>
+                        <div>
+                        <button type="button" id="boutton-envoyer" class="boutton-envoyer">Envoyer le message</button>
+                        <div class="loading-icon" id="loading-icon" style="display: none;">Envoie en cours<i class="fas fa-spinner fa-spin"></i></div>
+                      </div>
                         
                     </form>
                 </div>

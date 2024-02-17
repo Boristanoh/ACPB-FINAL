@@ -15,9 +15,11 @@
         font-size: 1.2rem;
         padding: 0.8rem;
         width: 90%;
-        border-bottom: 0.15rem solid black
+        border-bottom: 0.15rem solid black;
+       
         
 }
+
 .required{
     color: red;
     margin-left: 5px;
@@ -106,3 +108,28 @@
     padding : 5px;
     padding-bottom: 15px;
 }
+
+/* .loading-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px; 
+  }
+   */
+   .loading-icon {
+    position: relative;
+     /* Largeur de l'élément contenant */
+    
+     /* Hauteur de l'élément contenant */
+   
+  }
+  
+  .loading-icon i {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+    font-size: 20px; /* Taille de l'icône de chargement */
+  }
