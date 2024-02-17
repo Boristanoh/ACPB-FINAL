@@ -42,7 +42,7 @@ section{
     cursor: pointer;
     font-size: 2rem;
     opacity: 0;
-    color: var( --light-blue);
+    color: cadetblue;
     transform: translateY(50px);
     transition: opacity 0.5s ease-out, 500ms ease-in-out;
     
