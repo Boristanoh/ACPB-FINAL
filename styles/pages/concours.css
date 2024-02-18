@@ -10,6 +10,11 @@
     transform: translateY(100px);
     transition: opacity 0.5s ease-out, 500ms ease-in-out;
 }
+section a{
+    text-decoration: none;
+    color: cadetblue;
+ 
+}
 
 
 .logos{

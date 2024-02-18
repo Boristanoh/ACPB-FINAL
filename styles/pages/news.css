@@ -9,4 +9,17 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+section a{
+    text-decoration: none;
+    color: cadetblue;
+ 
+}
+
+.image-news{
+    height:70%;
+    width: 70%;
+    object-fit: contain;
 }
