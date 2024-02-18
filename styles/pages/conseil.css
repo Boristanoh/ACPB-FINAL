@@ -104,10 +104,12 @@ svg{
     margin-top: 2rem;
     padding-bottom: 1rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .faqs.active .faqs__answer{
-    max-height: 300px;
+    max-height: 400px;
     animation: fade 0.5s ease-in-out;
 }
 

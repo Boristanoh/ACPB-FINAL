@@ -43,7 +43,7 @@ section{
 
 
   button {
-    position: absolute;
+    position: relative;
     top: 100%;
     transform: translateY(50%);
     background-color: #333;
