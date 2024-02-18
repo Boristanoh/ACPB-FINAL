@@ -121,41 +121,57 @@ function sendEmail() {
 }
 
 function sendresponse(ReceiveEmail,ReceiveName){
-    fetch('https://api.sendinblue.com/v3/smtp/email', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'api-key': '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'
-  },
-  body: JSON.stringify({
-    sender: { name: 'Association des Classes Préparatoires Biologiques(ACPB)', email: 'acpb.inphb@gmail.com' },
-    to: [{ email: ReceiveEmail }],
-    subject: 'Réponse automatique - Réception de votre message',
-    textContent: ` 
-     Bonjour ${ReceiveName},
+//     fetch('https://api.sendinblue.com/v3/smtp/email', {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json',
+//     'api-key': 'q3DYhTmBaUIRCdJL'
+//   },
+//   body: JSON.stringify({
+//     sender: { name: 'Association des Classes Préparatoires Biologiques(ACPB)', email: 'acpb.inphb@gmail.com' },
+//     to: [{ email: ReceiveEmail }],
+//     subject: 'Réponse automatique - Réception de votre message',
+//     textContent: ` 
+//      Bonjour ${ReceiveName},
     
-    Nous vous remercions d'avoir pris le temps de nous envoyer votre avis/question. Veuillez noter que cette réponse est automatique pour confirmer la réception de votre message.
+//     Nous vous remercions d'avoir pris le temps de nous envoyer votre avis/question. Veuillez noter que cette réponse est automatique pour confirmer la réception de votre message.
     
-    Nous avons bien reçu votre message et nous vous en sommes reconnaissants.
+//     Nous avons bien reçu votre message et nous vous en sommes reconnaissants.
     
-    Votre contribution est précieuse pour nous et nous nous engageons à l'examiner attentivement. Nous vous fournirons une réponse détaillée dès que possible.
+//     Votre contribution est précieuse pour nous et nous nous engageons à l'examiner attentivement. Nous vous fournirons une réponse détaillée dès que possible.
     
-    En attendant, n'hésitez pas à nous contacter si vous avez d'autres questions ou préoccupations.
+//     En attendant, n'hésitez pas à nous contacter si vous avez d'autres questions ou préoccupations.
     
-    Cordialement,
+//     Cordialement,
     
-    Association des Classes Préparatoires Biologiques(ACPB)
+//     Association des Classes Préparatoires Biologiques(ACPB)
 
-    E-mail: acpb.inphb@gmail.com`
-  })
-})
-.then(response => {
-  if (!response.ok) {
-    throw new Error('Erreur lors de l\'envoi de l\'e-mail');
-  }
-  console.log('E-mail envoyé avec succès');
-})
-.catch(error => console.error('Erreur:', error));
+//     E-mail: acpb.inphb@gmail.com`
+//   })
+// })
+// .then(response => {
+//   if (!response.ok) {
+//     throw new Error('Erreur lors de l\'envoi de l\'e-mail');
+//   }
+//   console.log('E-mail envoyé avec succès');
+// })
+// .catch(error => console.error('Erreur:', error));
+var templateParam = {
+    from_email: ReceiveEmail,
+    from_name : ReceiveName
+  };
+
+emailjs.send('service_aklc7xh', 'template_2bqiqxa', templateParam)
+    .then(function(response) {
+       
+      console.log('Reponse E-mail envoyé avec succès :', response);
+      
+
+      
+    }, function(error) {
+      console.log('Erreur lors de l\'envoi de l\'e-mail :', error);
+
+    });
 
 }
 // Initialisez Email.js avec votre User ID
