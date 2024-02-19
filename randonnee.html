@@ -44,6 +44,8 @@
         console.log("fin du chargement image")
         window.onload = preloadImages;
     </script>
+
+
     
     
 </head>
@@ -192,17 +194,159 @@
         </p>
 
                 
-        <div class="slider-container">
+        <!-- <div class="slider-container">
             <div class="slider-content">
-              <!-- Contenu de votre slider -->
+            
               <div class="slide"> <img src="assets/image/activites/randonnee/SiteSud.jpg" alt=""> Site sud </div>
               <div class="slide"> <img src="assets/image/activites/randonnee/SiteCentre.jpg" alt=""> Site centre</div>
               <div class="slide"> <img src="assets/image/activites/randonnee/SiteNord.jpg" alt=""> Site nord </div>
-              <!-- Ajoutez autant de slides que nécessaire -->
+              
             </div>
             <button class="prev-button">&lt; Précédent</button>
              <button class="next-button">Suivant &gt;</button>
-        </div>
+        </div> -->
+
+        <h2 class="animation-individuelle">Les lieux visités</h2>
+<div class="section-slide animation-individuelle">
+        
+	
+<div class="slide-container">
+	
+	<div class="slides">
+        <div class="slide active"> <img src="assets/image/activites/randonnee/SiteNord.jpg"><p> Site Nord</p></div>
+        <div class="slide"> <img src="assets/image/activites/randonnee/SiteCentre.jpg"> <p>Site Centre</p></div>
+        <div class="slide"> <img src="assets/image/activites/randonnee/SiteSud.jpg"> <p>Site Sud</p></div>
+        <div class="slide"> <img src="assets/image/activites/randonnee/ferme.jpg"> <p>Ferme</p></div>
+        <div class="slide"> <img src="assets/image/activites/randonnee/lac.png"> <p>Le Lac</p></div>
+		
+		
+		
+		
+		
+	</div>
+
+	<div class="buttons">
+		<span class="next">&#10095;</span>
+		<span class="prev">&#10094;</span>
+	</div>
+
+	<div class="dotsContainer">
+		<div class="dot active" attr='0' onclick="switchImage(this)"></div>
+		<div class="dot" attr='1' onclick="switchImage(this)"></div>
+		<div class="dot" attr='2' onclick="switchImage(this)"></div>
+		<div class="dot" attr='3' onclick="switchImage(this)"></div>
+		<div class="dot" attr='4' onclick="switchImage(this)"></div>
+	</div>
+
+</div>
+
+<script type="text/javascript" >
+	
+	// Access the Images
+	let slideImages = document.querySelectorAll('.slide');
+	// Access the next and prev buttons
+	let next = document.querySelector('.next');
+	let prev = document.querySelector('.prev');
+	// Access the indicators
+	let dots = document.querySelectorAll('.dot');
+
+	var counter = 0;
+
+	// Code for next button
+	next.addEventListener('click', slideNext);
+	function slideNext(){
+	slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+	if(counter >= slideImages.length-1){
+		counter = 0;
+	}
+	else{
+		counter++;
+	}
+	slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+	indicators();
+	}
+
+	// Code for prev button
+	prev.addEventListener('click', slidePrev);
+	function slidePrev(){
+	slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+	if(counter == 0){
+		counter = slideImages.length-1;
+	}
+	else{
+		counter--;
+	}
+	slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+	indicators();
+	}
+
+	// Auto slideing
+	function autoSliding(){
+		deletInterval = setInterval(timer, 3000);
+		function timer(){
+			slideNext();
+			indicators();
+		}
+	}
+	autoSliding();
+
+	// Stop auto sliding when mouse is over
+	const container = document.querySelector('.slide-container');
+	container.addEventListener('mouseover', function(){
+		clearInterval(deletInterval);
+	});
+
+	// Resume sliding when mouse is out
+	container.addEventListener('mouseout', autoSliding);
+
+	// Add and remove active class from the indicators
+	function indicators(){
+		for(i = 0; i < dots.length; i++){
+			dots[i].className = dots[i].className.replace(' active', '');
+		}
+		dots[counter].className += ' active';
+	}
+
+	// Add click event to the indicator
+	function switchImage(currentImage){
+		currentImage.classList.add('active');
+		var imageId = currentImage.getAttribute('attr');
+		if(imageId > counter){
+		slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+		counter = imageId;
+		slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+		}
+		else if(imageId == counter){
+			return;
+		}
+		else{
+		slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+		counter = imageId;
+		slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';	
+		}
+		indicators();
+	}
+
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </section>
 
     <section>

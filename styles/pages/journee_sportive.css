@@ -159,6 +159,12 @@ video{
   
   
 }
+@media screen and (max-width: 440px){
+  .texte{
+    font-size: 3rem;
+  }
+}
+
 
 
 @keyframes scrollBackground {

@@ -13,6 +13,7 @@ function openNav() {
   openBtn.classList.add("ferme");
   sidenav.classList.add("active");
   navbar.classList.add("boutton");
+  document.body.classList.add("no-scroll")
 }
 
 /* Set the width of the side navigation to 0 */
@@ -21,6 +22,7 @@ function closeNav() {
 
   navbar.classList.remove("boutton");
   openBtn.classList.remove("ferme");
+  document.body.classList.remove("no-scroll")
 }
 
 

@@ -70,7 +70,8 @@
 }
 
 .animation-entrer-bas{
-    animation: animation-entrer-bas 600ms 50ms cubic-bezier(0.445, 0.05, 0.55, 0.95) both;
+    /* cubic-bezier(0.445, 0.05, 0.55, 0.95) */
+    animation: animation-entrer-bas 600ms 50ms cubic-bezier(0.445, 0.05, 0.55, 0.75) both;
 }
 
 
