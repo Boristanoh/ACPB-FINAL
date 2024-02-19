@@ -245,7 +245,7 @@ section{
 
 .section-slide{
   width: 100%;
-			min-height: 100vh;
+			min-height: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -260,6 +260,20 @@ section{
   /* border: 3px solid #ede6d6; */
   /* box-shadow: 0 0 8px 2px rgba(0,0,0,0.2); */
 }
+
+@media (max-width: 758px) {
+  .slide-container{
+    height: 30rem;
+  }
+}
+
+@media (max-width: 448px) {
+  .slide-container{
+    height: 20rem;
+  }
+}
+
+
 .slide-container .slides{
   width: 100%;
   height: calc(100% - 40px);
