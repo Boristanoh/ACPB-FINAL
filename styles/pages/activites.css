@@ -17,6 +17,7 @@ section{
     background: linear-gradient(to left, rgba(255, 255, 255, 0.918), rgba(206, 221, 255, 0.733));
     margin: 1rem;
     border-radius:40px;
+    opacity: 0;
 }
 
 .more__info{
@@ -129,8 +130,12 @@ section{
     0%{
         transform: translateX(120%);
     }
+    50%{
+        opacity: 0.8;
+    }
     100%{
         transform: translateX(0);
+        opacity: 1;
     }
     
 }

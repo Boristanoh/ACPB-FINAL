@@ -22,6 +22,17 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+  document.addEventListener("resize", function() {
+    classesToCheck.forEach(function(className,index) {
+      
+      if(index%2===0){
+        
+        checkVisibility(className,"animation-entrer-droit",1);
+      }else{
+        checkVisibility(className,"animation-entrer-gauche",1);
+      }
+    });
+  });
 
   // Appeler la fonction pour vérifier la visibilité au chargement du DOM pour chaque classe
   classesToCheck.forEach(function(className,index) {
