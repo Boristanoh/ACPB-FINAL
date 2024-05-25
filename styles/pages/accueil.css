@@ -7,10 +7,28 @@ i{
    
    background-color: aquamarine;
  } */
- 
+ h1 {
+    
+    padding: 0rem;
+    margin: 0rem;
+    text-align: center;
+    background:transparent;
+    animation: apparait2 1s ease-in-out 50ms both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: xx-large;
+    flex-direction: column;
+    text-align: center;
+    gap: 7rem;
+    height: 110vh;
+     width: 100hv;
+
+} 
  
  .start{
-     display: flex;
+     
      color: white;
      /* background-color: brown; */
      background: linear-gradient(to right, rgb(165, 50, 42,0.3), rgb(165, 50, 42,0.05)),
@@ -24,15 +42,8 @@ i{
     background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
-     align-items: center;
-     justify-content: center;
-     height: 110vh;
-     width: 100hv;
-     margin: 0 auto;
-     font-size: xx-large;
-     flex-direction: column;
-     text-align: center;
-     gap: 7rem;
+    
+
     
  }
 
@@ -326,9 +337,13 @@ i{
     flex-direction: row;
     gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
+    
     padding: 0px;
+ 
 }
+
+
+
 
 
 .pbox  div{

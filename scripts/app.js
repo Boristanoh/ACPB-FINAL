@@ -31,7 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const textToAnimate = "La BCP-ST plus qu'une famille.";
 
   const textElement2 = document.querySelector('.start__p1');
-  textElement.textContent = "";
+  if (textElement){
+    textElement.textContent = "";
+  }
+  
   const textToAnimate2 = "Association  des Classes Préparatoires Biologiques ";
 
   function typeText(textElement, textToAnimate, callback) {
@@ -53,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Première animation
+  if(textElement2){
   typeText(textElement2, textToAnimate2, function () {
     // Fonction de rappel appelée lorsque le texte 1 est entièrement écrit
     // Démarrez la deuxième animation ici
@@ -60,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Fonction de rappel pour la deuxième animation si nécessaire
     });
   });
+}
 });
 
 

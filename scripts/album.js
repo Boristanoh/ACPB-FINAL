@@ -386,6 +386,7 @@ async function ajout_photo(chemin, signal) {
         if (imageExiste) {
             baliseLien.href = cheminImage;
             baliseImage.src = cheminImage;
+            baliseImage.alt = `image ${index} ${chemin.toLowerCase()}`;
             baliseImage.loading = "lazy";
             baliseDiv.className = "photo-hover";
             baliseDiv.textContent = "Voir la photo";
