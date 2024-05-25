@@ -150,3 +150,30 @@
     transform: translateY(100px);
     transition: opacity 0.5s ease-out, 500ms ease-in-out;
 }
+
+h1{
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.cadre-fleche {
+  border: 0.2rem black solid;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+.fleche {
+  font-size: 50px;
+  color: #000;
+  animation: clignoter 1s infinite;
+}
+
+@keyframes clignoter {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
