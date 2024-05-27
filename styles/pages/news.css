@@ -30,12 +30,14 @@ section{
     width: fit-content;
     padding: 0.5rem;
     margin-left: auto;
+    font-weight: bold;
 }
 
 .type{
     background-color: cadetblue;
     width: fit-content;
     padding: 0.5rem;
+    font-weight: bold;
 }
 
 

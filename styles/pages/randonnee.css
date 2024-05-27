@@ -400,11 +400,12 @@ h1{
 .cadre-fleche {
   border: 0.2rem black solid;
   border-radius: 1rem;
-  padding: 0.4rem;
+  padding: 1rem 0.2rem;
+
 }
 
 .fleche {
-  font-size: 50px;
+  font-size: 3rem;
   color: #000;
   animation: clignoter 1s infinite;
 }
