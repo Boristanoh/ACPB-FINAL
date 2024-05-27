@@ -1,3 +1,23 @@
+// Obtenir la date actuelle
+const currentDate = new Date();
+
+// Fonction de comparaison pour trier les objets par proximité avec la date actuelle
+news.sort((a, b) => {
+    const dateA = new Date(a.date.split('/').reverse().join('-')); // Convertir la date en format YYYY-MM-DD
+    const dateB = new Date(b.date.split('/').reverse().join('-'));
+    
+    // Calculer la différence de temps par rapport à la date actuelle
+    const diffA = Math.abs(currentDate - dateA);
+    const diffB = Math.abs(currentDate - dateB);
+
+    // Trier par dates les plus récentes par rapport à la date actuelle
+    return diffA - diffB;
+});
+
+console.log("okk")
+console.log(news);
+
+
 
 const page = document.querySelector(".bloc-news");
 page.innerHTML =""
