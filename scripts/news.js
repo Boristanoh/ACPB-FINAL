@@ -31,6 +31,7 @@ news.forEach(actualite => {
     const div_image = document.createElement('div')
     const image = document.createElement('img')
     image.src = `assets/image/news/${actualite.image}`
+    image.alt = `image ${actualite.image}`
     div_image.appendChild(image)
     
 

@@ -14,26 +14,35 @@
 .bloc__citation{
     box-shadow: 0rem 0rem 0.5rem black;
     padding: 1rem 1rem;
-    height: 13rem;
-    width: 24rem;
+    height: 28rem;
+    width: 18rem;
     border-radius: 15px;
     /* background-color: var(--white); */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.918), rgba(206, 221, 255, 0.8));
     /* z-index: 0; */
     transition: transform 700ms ease-in-out;
-}
+    
 
-.bloc__citation div{
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.temoignages{
+    margin: 0;
 }
 
 
-.bloc__citation img{
+.bloc__citation__image img{
+    border: 0.4rem #ccc solid;
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
+}
+
+.bloc__citation__texte p,.bloc__citation__nom p{
+    text-align: center;
 }
 
 .bloc__citation:hover{
@@ -133,4 +142,31 @@ section{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+
+
+.bloc__citation__texte {
+    position: relative;
+    padding: 1em;
+    font-style: italic;
+}
+
+.bloc__citation__texte::before,
+.bloc__citation__texte::after {
+    content: '"';
+    font-size: 3em; /* Taille des guillemets */
+    color: #000;    /* Couleur des guillemets */
+    position: absolute;
+}
+
+.bloc__citation__texte::before {
+    left: -0.2em;  /* Ajustez au besoin */
+    top: -0.2em;   /* Ajustez au besoin */
+}
+
+.bloc__citation__texte::after {
+    right: -0.2em; /* Ajustez au besoin */
+    bottom: -0.2em; /* Ajustez au besoin */
 }
