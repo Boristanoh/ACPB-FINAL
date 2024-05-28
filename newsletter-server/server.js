@@ -3,11 +3,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
 const SibApiV3Sdk = require('sib-api-v3-sdk');
+require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;require('dotenv').config();
+const PORT = process.env.PORT || 3000;
+
 
 const SENDINBLUE_API_KEY = process.env.SENDINBLUE_API_KEY;
+console.log('Sendinblue API Key:', SENDINBLUE_API_KEY);
+
 
 const LIST_ID = 3; // Remplacez par l'ID de votre liste Sendinblue
 
@@ -74,6 +78,7 @@ app.post('/subscribe', async (req, res) => {
     } catch (error) {
         console.error('Erreur lors de l\'inscription:', error);
         res.status(500).json({ message: 'Erreur lors de l\'inscription.' });
+        
     }
 });
 
