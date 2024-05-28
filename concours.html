@@ -247,9 +247,10 @@
         <div class="newsletter__texte"> <i class="fa-solid fa-square-rss"></i> NE MANQUEZ PLUS AUCUNE NOUVELLE DE LA FILIERE BCPST </div>
         <h3>Abonnez vous à la newsletter ! <span class="icon"><i class="fa-sharp fa-solid fa-typewriter"></i></span></h3>
         <div class="xcontainer">
-            <form class="search-form">
-            <label for="email"></label><p>Email</p><input id="email-input" type="email" placeholder="prenom.nom@inphb.ci">
-            <button type="submit" title="search-form" onclick="self.location.href='work.html'" class="circle-button" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            <form class="search-form" id="newsletterForm" action="http://localhost:3000/subscribe" method="POST">
+                <label for="email">Email :</label>
+                <input id="email-input" type="email" name="email" placeholder="prenom.nom@inphb.ci" required>
+                <button type="submit" title="search-form"  class="circle-button"><i class="fa-solid fa-paper-plane"></i></button>
             </form>
         </div>
     </div>
