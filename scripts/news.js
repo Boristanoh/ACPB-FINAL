@@ -53,7 +53,8 @@ news.forEach(actualite => {
 
     lien = document.createElement("a")
     lien.innerHTML = '<i class="fa-solid fa-link"></i>Plus d\'informations'
-    lien.href=actualite.lien
+    lien.href=actualite.lien ? actualite.lien: "#"
+    lien.target = actualite.lien ? "_blank":"_self"
 
     div_texte.appendChild(div_date)
     div_texte.appendChild(div_type)
