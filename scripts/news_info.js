@@ -11,8 +11,8 @@ news =[
         "nom":"résulats du concours d'entrée en cycle ingénieur 2024",
         "date":"03/06/2024",
         "type": "Concours",
-        "information":"Les résultats du concours d'entrée en cycle ingénieurs de l'INP-HB communement appelé Gbinzin seront disponibles le lundi 03 juin 2024. Après des épreuves écrites rigoureuses , les candidats pourront découvrir leurs resultats .",
-        "lien":"https://web.facebook.com/inphb.polytech",
+        "information":"Les résultats du concours d'entrée en cycle ingénieurs de l'INP-HB communement appelé Gbinzin sont disponibles sur le site de l'INP-HB. Après des épreuves écrites rigoureuses , les candidats découvrent enfin leurs resultats .",
+        "lien":"https://ingenieurs.concours.inphb.app/",
         "image":"gbinzin.jpg"
     }
 ]
